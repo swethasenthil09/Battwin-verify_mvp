@@ -1,0 +1,38 @@
+{
+  "experiment_name": "Experiment C: Sensor Packet Dropout & Masking Resilience",
+  "battery_id": "B0018",
+  "masking_results": [
+    {
+      "sensor_dropout_pct": 0,
+      "data_completeness_rating": 1.0,
+      "mae_pct": 1.91,
+      "rmse_pct": 2.27,
+      "reliability_score": 82.35,
+      "status": "Nominal"
+    },
+    {
+      "sensor_dropout_pct": 10,
+      "data_completeness_rating": 0.9,
+      "mae_pct": 2.26,
+      "rmse_pct": 2.91,
+      "reliability_score": 80.42,
+      "status": "Minor Degradation"
+    },
+    {
+      "sensor_dropout_pct": 30,
+      "data_completeness_rating": 0.7,
+      "mae_pct": 2.6,
+      "rmse_pct": 3.33,
+      "reliability_score": 76.99,
+      "status": "Moderate Degradation"
+    },
+    {
+      "sensor_dropout_pct": 50,
+      "data_completeness_rating": 0.5,
+      "mae_pct": 4.14,
+      "rmse_pct": 5.17,
+      "reliability_score": 72.07,
+      "status": "Severe Dropout / High Risk"
+    }
+  ]
+}

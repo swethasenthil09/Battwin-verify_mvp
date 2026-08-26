@@ -1,0 +1,36 @@
+{
+  "battery_id": "B0018",
+  "ai_mae": 1.914578948139814,
+  "sim_mae": 2.6888456905585603,
+  "ai_vs_physics_mae": 1.6280122769820264,
+  "data_completeness": 1.0,
+  "domain_similarity": 1.0,
+  "ai_agreement": 0.9042710525930093,
+  "sim_fidelity": 0.8655577154720719,
+  "cross_model_agreement": 0.9185993861508986,
+  "uncertainty_coverage": 0.045454545454545456,
+  "reliability_score": 79.96,
+  "weights": {
+    "data_completeness": 0.15,
+    "domain_similarity": 0.15,
+    "ai_agreement": 0.25,
+    "sim_fidelity": 0.2,
+    "cross_model_agreement": 0.1,
+    "uncertainty_quality": 0.15
+  },
+  "scenario": {
+    "code": "A",
+    "title": "Scenario A: Optimal Digital Twin Alignment",
+    "description": "Both AI model and physical reference model show high agreement with measured battery telemetry. Operational confidence is high."
+  },
+  "calibration_before": {
+    "coverage": 0.045454545454545456,
+    "half_width": 0.17737827326186958
+  },
+  "calibration_after": {
+    "coverage": 0.17424242424242425,
+    "half_width": 0.5753495717643631
+  },
+  "uncertainty_quality_after": 0.17424242424242425,
+  "reliability_score_after_calibration": 82.37096994032113
+}

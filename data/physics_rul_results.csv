@@ -1,0 +1,5 @@
+battery_id,n_real_cycles,fit_on_first_n_cycles,physics_predicted_EOL_cycle,actual_EOL_cycle_in_data,physics_RUL_error_cycles
+B0005,168,67,206,125.0,81.0
+B0006,168,67,112,109.0,3.0
+B0007,168,67,219,,
+B0018,132,52,191,97.0,94.0

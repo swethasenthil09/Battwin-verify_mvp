@@ -1,0 +1,23 @@
+{
+  "battery_id": "B0018",
+  "current_cycle": 132,
+  "observed_soh_pct": 67.05,
+  "predicted_soh_pct": 71.87,
+  "eol_reached": true,
+  "rul_ai_cycles": 0.0,
+  "rul_physics_cycles": 59,
+  "note": "Battery has permanently reached EOL threshold (70% SoH). Operational RUL is 0 cycles.",
+  "EOL_definition_note": "Naive first-crossing EOL was cycle 97, but real capacity recovery (documented Li-ion relaxation) pushed SoH back above threshold. Corrected permanent EOL is cycle 123.",
+  "evaluation": {
+    "actual_eol_cycle_permanent": 123,
+    "actual_eol_cycle_first_touch": 97,
+    "actual_rul_delta": -9
+  },
+  "last_observed_cycle": 132,
+  "last_observed_SoH_pct": 71.87,
+  "RUL_ai_trend_cycles": 0.0,
+  "RUL_physics_cycles": 59,
+  "RUL_actual_cycles_in_recorded_data": -9,
+  "actual_EOL_cycle_permanent": 123,
+  "actual_EOL_cycle_first_touch_naive": 97
+}

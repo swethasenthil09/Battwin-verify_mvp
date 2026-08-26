@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #0A0D10;
+  --panel: #12161B;
+  --panel-border: #232A31;
+  --panel-hover: #1A2027;
+  --text: #E7E9EC;
+  --muted: #7C8590;
+  --ai: #4FD1C5;
+  --physics: #E8935B;
+  --measured: #F2EFE9;
+  --good: #4ADE80;
+  --warn: #FBBF24;
+  --bad: #F87171;
+  --accent: #6366F1;
+  --glow-ai: rgba(79, 209, 197, 0.15);
+  --glow-accent: rgba(99, 102, 241, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--panel-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Glassmorphism Panel */
+.glass-panel {
+  background: rgba(18, 22, 27, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 20px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Glow Borders */
+.glow-ai {
+  box-shadow: 0 0 20px var(--glow-ai);
+}
+
+.glow-accent {
+  box-shadow: 0 0 24px var(--glow-accent);
+}
+
+/* Badge System */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.badge-good {
+  background: rgba(74, 222, 128, 0.12);
+  color: var(--good);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.badge-warn {
+  background: rgba(251, 191, 36, 0.12);
+  color: var(--warn);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.badge-bad {
+  background: rgba(248, 113, 113, 0.12);
+  color: var(--bad);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.badge-accent {
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--ai);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+}
+
+/* Form Controls */
+input, select, button {
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6366F1 0%, #4FD1C5 100%);
+  color: #0A0D10;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(79, 209, 197, 0.3);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.form-input {
+  background: #0D1114;
+  border: 1px solid var(--panel-border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: var(--ai);
+  box-shadow: 0 0 8px var(--glow-ai);
+}
+
+/* Pulse indicator */
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--good);
+  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+  animation: pulse-ring 1.8s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse-ring {
+  to {
+    box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+  }
+}

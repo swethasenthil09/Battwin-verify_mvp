@@ -1,0 +1,30 @@
+{
+  "source_dataset": "NASA PCoE (B0005/6/7/18)",
+  "target_dataset": "CALCE CS2 (LiCoO2, 40\u00b0C, 2C discharge)",
+  "feature_wasserstein_distances": {
+    "discharge_cycle_index": 5.2642,
+    "ambient_temperature_C": 16.0142,
+    "voltage_mean": 0.0613,
+    "voltage_min": 0.1829,
+    "voltage_max": 0.0498,
+    "current_mean": 0.3119,
+    "current_min": 0.2372,
+    "temperature_mean": 11.7031,
+    "temperature_max": 9.1209,
+    "discharge_duration_s": 1539.9377
+  },
+  "unadapted_base_model": {
+    "mae_pct": 8.06,
+    "rmse_pct": 8.96,
+    "r2_score": -0.7282,
+    "note": "Severe out-of-domain degradation due to 40\u00b0C ambient shift & 2C discharge rate"
+  },
+  "residual_adapted_model": {
+    "adaptation_samples_used": 45,
+    "mae_pct": 3.48,
+    "rmse_pct": 4.52,
+    "r2_score": 0.5612,
+    "error_reduction_pct": 56.8,
+    "note": "Lightweight secondary residual model successfully restores accuracy under domain shift"
+  }
+}

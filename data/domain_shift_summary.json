@@ -1,0 +1,70 @@
+{
+  "B0005": {
+    "target_battery_id": "B0005",
+    "is_held_out": false,
+    "status_flag": "NOMINAL",
+    "domain_shift_index_pct": 2.6,
+    "domain_similarity_score": 0.974,
+    "severity": "In-Domain Training Population",
+    "ambient_temp_shift_c": 0.0,
+    "ambient_temp_target_c": 24.0,
+    "ambient_temp_train_c": 24.0,
+    "feature_profile_shift_z": 0.19,
+    "details": [
+      "Ambient temperature closely matches training population (24.0\u00b0C).",
+      "Voltage/current waveform summary statistics lie within standard training bounds."
+    ],
+    "recommendation_impact": "Standard model confidence applies."
+  },
+  "B0006": {
+    "target_battery_id": "B0006",
+    "is_held_out": false,
+    "status_flag": "NOMINAL",
+    "domain_shift_index_pct": 5.1,
+    "domain_similarity_score": 0.949,
+    "severity": "In-Domain Training Population",
+    "ambient_temp_shift_c": 0.0,
+    "ambient_temp_target_c": 24.0,
+    "ambient_temp_train_c": 24.0,
+    "feature_profile_shift_z": 0.38,
+    "details": [
+      "Ambient temperature closely matches training population (24.0\u00b0C).",
+      "Voltage/current waveform summary statistics lie within standard training bounds."
+    ],
+    "recommendation_impact": "Standard model confidence applies."
+  },
+  "B0007": {
+    "target_battery_id": "B0007",
+    "is_held_out": false,
+    "status_flag": "NOMINAL",
+    "domain_shift_index_pct": 4.6,
+    "domain_similarity_score": 0.954,
+    "severity": "In-Domain Training Population",
+    "ambient_temp_shift_c": 0.0,
+    "ambient_temp_target_c": 24.0,
+    "ambient_temp_train_c": 24.0,
+    "feature_profile_shift_z": 0.35,
+    "details": [
+      "Ambient temperature closely matches training population (24.0\u00b0C).",
+      "Voltage/current waveform summary statistics lie within standard training bounds."
+    ],
+    "recommendation_impact": "Standard model confidence applies."
+  },
+  "B0018": {
+    "target_battery_id": "B0018",
+    "is_held_out": true,
+    "status_flag": "NOMINAL",
+    "domain_shift_index_pct": 1.4,
+    "domain_similarity_score": 0.986,
+    "severity": "In-Domain Training Population",
+    "ambient_temp_shift_c": 0.0,
+    "ambient_temp_target_c": 24.0,
+    "ambient_temp_train_c": 24.0,
+    "feature_profile_shift_z": 0.11,
+    "details": [
+      "Ambient temperature closely matches training population (24.0\u00b0C).",
+      "Voltage/current waveform summary statistics lie within standard training bounds."
+    ],
+    "recommendation_impact": "Standard model confidence applies."
+  }
+}
