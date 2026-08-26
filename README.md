@@ -1,44 +1,185 @@
 # BATTWIN Verify
 
-Reliability-aware battery intelligence for BESS monitoring, health estimation, and end-of-life decision support.
+> Reliability-aware battery intelligence for BESS monitoring, health estimation, and end-of-life decision support.
 
-Built for: P5 — Smart Battery Energy Storage Management & RUL Prediction.
+**Built for:** P5 — Smart Battery Energy Storage Management & RUL Prediction
 
-This project evaluates real NASA PCoE battery degradation data using a practical end-to-end workflow: data extraction, SoH modeling, physics-based comparison, reliability scoring, and a dashboard for interactive review.
+BATTWIN Verify evaluates real NASA PCoE battery degradation data through an end-to-end workflow covering data extraction, State of Health (SoH) prediction, physics-based comparison, reliability scoring, Remaining Useful Life (RUL) analysis, and interactive visual analytics.
 
-## Why this project exists
+The project focuses not only on model accuracy, but also on identifying model limitations, uncertainty, domain shift, and late-life prediction failures.
 
-The goal is to build a decision-support system that is transparent about model quality and failure modes, not just a high-accuracy demo. The repository intentionally reports weak or uncertain results alongside stronger ones so that reliability-aware failure analysis is visible in the system design.
+---
 
-## What is included
+## Why BATTWIN Verify?
 
-- Real NASA battery aging data and extracted cycle summaries
-- AI-based state-of-health (SoH) estimation
-- Physics-informed reference modeling
-- Reliability scoring workflow for detection of unsafe late-life drift
-- Backend API for battery diagnostics and recommendations
-- React dashboard for exploration and visual comparison
+Battery health prediction models can appear accurate overall while still producing unreliable predictions during critical late-life operation.
 
-## Repository structure
+BATTWIN Verify is designed as a transparent decision-support prototype that evaluates:
 
-```text
-data/         Real extracted NASA cycle data and computed outputs
-backend/      FastAPI API serving the pipeline results and live prediction endpoint
-frontend/     Vite + React dashboard for visual analytics
-scripts/      Reproducible analysis pipeline, structured in execution order
-docs/         Design notes, research-gap material, and supporting documentation
-README.md     Project overview and setup instructions
-```
+- How accurately battery health can be predicted
+- Where prediction models fail
+- Whether predictions remain reliable under domain shift
+- How AI predictions compare with a physics-based reference
+- Whether reliability-aware monitoring can detect unsafe late-life behavior
 
-## Key technical approach
+Rather than hiding weak results, the system explicitly reports them as part of the evaluation.
 
-- Data source: NASA Ames PCoE Li-ion battery aging dataset (Saha & Goebel, 2007)
-- Training strategy: battery-level holdout validation on B0018, rather than random row-level splitting
-- AI model: XGBoost regressor using cycle-level summary features
-- Physics reference: exponential capacity-fade model fit on early-cycle data
-- Reliability metric: composite score combining several real, computed factors such as data completeness, agreement quality, fidelity, and uncertainty behavior
+---
 
-## Getting started
+## Key Features
+
+-  Real NASA PCoE battery aging data
+-  AI-based State of Health (SoH) estimation using XGBoost
+-  Physics-based capacity fade comparison
+-  Remaining Useful Life (RUL) analysis
+-  Reliability scoring for prediction quality assessment
+-  Detection of unsafe late-life prediction drift
+-  FastAPI backend for battery diagnostics and recommendations
+-  React dashboard for interactive analysis and visualization
+-  Reproducible end-to-end data analysis pipeline
+
+---
+
+##  System Architecture
+
+            NASA Battery Data
+                   │
+                   ▼
+          Data Extraction & Processing
+                    │
+                    ▼
+          Cycle-Level Feature Generation
+                    │
+        ├───────────────────────┐
+        ▼                       ▼
+    XGBoost SoH Model      Physics-Based Fade Model
+        │                       │
+        └───────────┬───────────┘
+                    ▼
+          Reliability Analysis
+                    │
+          ┌─────────┼─────────┐
+          ▼         ▼         ▼
+        SoH        RUL    Risk Detection
+                    │
+                    ▼
+              FastAPI Backend
+                    │
+                    ▼
+             React Dashboard
+
+
+---
+
+##  Technical Approach
+
+### Data Source
+
+The project uses the NASA Ames PCoE Li-ion Battery Aging Dataset, including real battery degradation measurements and cycle-level capacity data.
+
+### Validation Strategy
+
+Instead of randomly splitting cycle records, the model uses battery-level holdout validation.
+
+- Training batteries are used for model development.
+- Battery B0018 is held out for evaluation.
+
+This provides a more realistic evaluation of how the model performs on an unseen battery.
+
+### AI-Based SoH Estimation
+
+An XGBoost Regressor predicts battery State of Health (SoH) using cycle-level summary features extracted from battery degradation data.
+
+### Physics-Based Reference
+
+An empirical exponential capacity-fade model is fitted using early-cycle battery behavior and used as a reference for comparison.
+
+### Reliability Analysis
+
+A composite reliability workflow evaluates factors including:
+
+- Data completeness
+- Agreement between model outputs
+- Prediction fidelity
+- Uncertainty behavior
+
+This helps identify situations where a prediction may appear valid but is potentially unreliable.
+
+---
+
+##  Verified Findings
+
+The project intentionally reports both successful and weak results.
+
+### 1. Strong AI-Based SoH Prediction
+
+On the fully held-out battery:
+
+- **MAE:** ≈ 1.86%
+- **R²:** ≈ 0.92
+
+### 2. Physics Reference Limitations
+
+The empirical physics-based model performed less effectively:
+
+- **MAE:** ≈ 5.12%
+- Did not converge to a reliable end-of-life prediction for B0018.
+
+### 3. Uncertainty Calibration Challenges
+
+The baseline uncertainty approach achieved:
+
+- **6.1% empirical coverage** against an **80% target**
+
+Split-conformal calibration improved coverage to:
+
+- **18.9%**
+
+However, the results still indicate that uncertainty calibration remains challenging under domain shift.
+
+### 4. Late-Life Prediction Bias
+
+The AI model showed systematic late-life bias by **overestimating SoH near the end of the battery lifecycle**.
+
+This resulted in the model reporting the battery above the End-of-Life threshold even after the real battery data had permanently crossed that threshold.
+
+### 5. Capacity Recovery Effects
+
+Real capacity recovery effects were observed in the B0018 trajectory.
+
+Because of this, a simple first-crossing End-of-Life definition was not considered reliable. The workflow was updated to use a **permanent-crossing EOL definition**.
+
+
+---
+
+##  Repository Structure
+
+BATTWIN-Verify/
+│
+├── data/          # Extracted NASA cycle data and computed outputs
+├── backend/       # FastAPI backend and prediction endpoints
+├── frontend/      # Vite + React dashboard
+├── scripts/       # Reproducible analysis pipeline
+├── docs/          # Design notes and supporting documentation
+└── README.md
+
+---
+
+##  Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Data Processing | Python, Pandas, NumPy |
+| Machine Learning | XGBoost, Scikit-learn |
+| Scientific Computing | SciPy |
+| Backend | FastAPI |
+| Frontend | React, Vite |
+| Data Storage | CSV, JSON |
+| Dataset | NASA PCoE Battery Dataset |
+
+---
+
+##  Getting Started
 
 ### Prerequisites
 
@@ -46,87 +187,110 @@ README.md     Project overview and setup instructions
 - Node.js 18+
 - npm
 
-### 1) Run the frontend
+### 1. Run the Frontend
 
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-
-The dashboard can run as a standalone snapshot view and will automatically detect the backend at `localhost:8000` and switch into live mode when available.
-
-### 2) Run the backend
-
+### 2. Run the backend
 ```bash
 cd backend
 pip install fastapi uvicorn pandas
 python -m uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
-Available endpoints include:
+### Available API Endpoints
+GET  /api/batteries
+GET  /api/battery/B0018/analysis
+GET  /api/battery/B0018/reliability
+GET  /api/battery/B0018/rul
+GET  /api/battery/B0018/recommendation
+POST /api/predict
 
-- `GET /api/batteries`
-- `GET /api/battery/B0018/analysis`
-- `GET /api/battery/B0018/reliability`
-- `GET /api/battery/B0018/rul`
-- `GET /api/battery/B0018/recommendation`
-- `POST /api/predict`
-
-### 3) Reproduce the analysis pipeline
-
-```bash
+### 3. Reproduce the Analysis Pipeline
 cd scripts
+
 pip install pandas numpy scipy scikit-learn xgboost joblib
 
-python extract_data.py          # NASA .mat -> clean battery cycle table
-python train_soh_model.py       # XGBoost model with B0018 held out
-python rul_and_physics.py       # Physics-based fade model and related outputs
-python cross_fidelity.py        # Gap metrics and reliability scoring
-python phaseE_calibration.py    # Uncertainty calibration checks
-python phaseF_rul_fixed.py      # Corrected RUL flow with EOL handling
-```
+python extract_data.py
+python train_soh_model.py
+python rul_and_physics.py
+python cross_fidelity.py
+python phaseE_calibration.py
+python phaseF_rul_fixed.py
 
-> The raw NASA `.mat` files are not bundled in this repository because they are large. The included CSV outputs in `data/` are sufficient for downstream reproducibility and evaluation.
+---
 
-## Verified findings
+##  Current Scope and Limitations
 
-These are the main results and are reported transparently rather than optimized away.
+BATTWIN Verify is currently an MVP and intentionally keeps several components simplified.
 
-1. AI SoH performance on the fully held-out battery is strong and reproducible: MAE ≈ 1.86% and R² ≈ 0.92.
-2. The physics-lite model is materially weaker, with MAE ≈ 5.12%, and it failed to converge on a usable end-of-life prediction for B0018.
-3. Uncertainty calibration was poor in the baseline model: naive residual standard deviation intervals achieved only 6.1% empirical coverage against an 80% target. Split-conformal calibration improved this to 18.9%, which still indicates that interval widening alone is insufficient under domain shift.
-4. The most important safety-relevant result is a late-life bias: the AI model systematically overestimates SoH in the final real cycles, reporting the battery above the EOL threshold even after it had permanently crossed EOL in real data.
-5. Real capacity recovery effects are visible in the B0018 trajectory, confirming that a naive first-crossing EOL definition is not robust; the project corrected this to a permanent-crossing definition.
+- SoC estimation uses cycle-level Coulomb counting summaries rather than a continuous EKF implementation.
+- The physics reference is an empirical exponential fade model rather than a complete ECM simulator.
+- Data persistence currently uses local CSV and JSON files.
+- Advanced cross-dataset validation is deferred to future work.
+- Incomplete-data stress testing is not yet implemented.
 
-## Project scope and disclosures
+The following features are planned but not currently complete:
 
-The current MVP is intentionally scoped and simplified compared with the full design specification. Important transparency notes include:
+- SHAP-based model explainability
+- Optimizer-based recommendation logic
+- Advanced domain adaptation
+- Database integration
+- Broader battery dataset evaluation
 
-- SoC estimation is partial and uses cycle-level Coulomb counting summaries rather than a full continuous EKF implementation.
-- The physics reference is an empirical exponential fade model, not a full ECM simulator.
-- Data persistence uses local CSV/JSON files instead of a full database layer.
-- Incomplete-data stress testing and more advanced cross-dataset validation are deferred to later phases.
-- SHAP explainability, optimizer-based recommendation logic, and broader domain adaptation are planned future work rather than complete current features.
 
-## Recommended use
+---
 
-This repository is best used as a transparent technical prototype for:
+##  Recommended Use Cases
 
-- battery health assessment workflows
-- reliability-aware model evaluation under domain shift
-- end-of-life risk detection and monitoring dashboards
-- communicating trade-offs between AI and physics-based methods
+BATTWIN Verify is designed as a technical prototype for:
 
-## Notes for repository readiness
+- Battery health assessment
+- State of Health (SoH) prediction
+- Remaining Useful Life (RUL) analysis
+- Reliability-aware machine learning evaluation
+- End-of-life risk detection
+- Battery monitoring and diagnostics
+- AI and physics-based model comparison
 
-This project is structured for a clean Git push and collaborative review. Before making the repository public, it is recommended to add:
+---
 
-- an explicit license file
-- a `.gitignore` for local environment artifacts
-- a short contributor guide if collaboration is intended
-- optional CI checks for backend/frontend validation
+##  Future Improvements
 
-## Summary
+- Support additional battery datasets
+- Improve cross-dataset validation
+- Add SHAP-based model explainability
+- Implement advanced uncertainty estimation
+- Add database persistence
+- Introduce optimizer-based battery recommendations
+- Improve domain adaptation across battery types
+- Add automated testing and CI workflows
 
-BATTWIN Verify demonstrates a realistic path from raw battery measurements to AI/physics decision support, while keeping the model limitations visible. That transparency is the key value of the project: it shows where the system is useful, where it fails, and how reliability-aware monitoring can catch late-life risk before it becomes a hidden operational issue.
+---
+
+##  Project Focus
+
+The primary contribution of BATTWIN Verify is not simply achieving high prediction accuracy.
+
+The system is designed to answer a more practical question:
+
+> **When should a battery health prediction be trusted?**
+
+By combining AI-based prediction, physics-based comparison, uncertainty analysis, and reliability scoring, the project makes model limitations visible instead of treating accuracy as the only measure of success.
+
+---
+
+## Dataset Reference
+
+NASA Ames Prognostics Center of Excellence (PCoE)  
+Li-ion Battery Aging Dataset  
+Saha & Goebel, 2007
+
+---
+
+##  License
+
+This project is currently intended as an academic and research prototype. A license file will be added before public release.
