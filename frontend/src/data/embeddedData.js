@@ -24263,6 +24263,7 @@ export const EMBEDDED_DATA = {
           "predicted_first_touch_eol_cycle": 124,
           "predicted_permanent_eol_cycle": 124,
           "detection_delay_cycles": -1,
+          "detection_delay_is_lower_bound": false,
           "delay_interpretation": "Model detected permanent EOL 1 cycles EARLY (actual: cycle 125, predicted: cycle 124). Conservative \u2014 model is cautious near end of life."
         },
         "drift_onset": {
@@ -24373,6 +24374,7 @@ export const EMBEDDED_DATA = {
           "predicted_first_touch_eol_cycle": 108,
           "predicted_permanent_eol_cycle": 122,
           "detection_delay_cycles": 0,
+          "detection_delay_is_lower_bound": false,
           "delay_interpretation": "Model detected permanent EOL at exactly the correct cycle (122). No detection delay."
         },
         "drift_onset": {
@@ -24483,6 +24485,7 @@ export const EMBEDDED_DATA = {
           "predicted_first_touch_eol_cycle": null,
           "predicted_permanent_eol_cycle": null,
           "detection_delay_cycles": null,
+          "detection_delay_is_lower_bound": false,
           "delay_interpretation": "Battery did not permanently reach EOL within recorded data."
         },
         "drift_onset": {
@@ -24593,7 +24596,8 @@ export const EMBEDDED_DATA = {
           "predicted_first_touch_eol_cycle": null,
           "predicted_permanent_eol_cycle": null,
           "detection_delay_cycles": 9,
-          "delay_interpretation": "Actual permanent EOL at cycle 123, but model predictions never permanently crossed the 70% threshold \u2014 model fails to detect EOL."
+          "detection_delay_is_lower_bound": true,
+          "delay_interpretation": "The model did not permanently cross the 70% EOL threshold within the recorded dataset; the detection delay is therefore at least 9 cycles."
         },
         "drift_onset": {
           "drift_onset_cycle": 100,
@@ -24618,7 +24622,7 @@ export const EMBEDDED_DATA = {
           "findings": [
             "Late-life MAE (3.26%) exceeds early-life MAE (1.60%) \u2014 prediction accuracy degrades in late life.",
             "Late-life signed bias is +3.26% (systematic overestimation of SoH).",
-            "EOL detection is delayed by 9 cycles \u2014 model fails to flag end-of-life in a timely manner."
+            "Actual permanent EOL at cycle 123, but predicted permanent EOL never crossed. Minimum observed detection gap is 9 cycles."
           ],
           "conclusion": "SUPPORTED \u2014 3/3 criteria met. The AI model shows measurable degradation in prediction quality during late-life battery operation."
         }

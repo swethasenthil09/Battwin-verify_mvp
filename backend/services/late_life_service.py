@@ -219,12 +219,14 @@ def compute_eol_detection_delay(df: pd.DataFrame) -> dict:
 
     # Detection delay based on permanent crossing (the scientifically
     # correct EOL definition given capacity recovery effects)
+    delay_is_lower_bound = False
     if actual_permanent is not None and predicted_permanent is not None:
         delay_cycles = predicted_permanent - actual_permanent
     elif actual_permanent is not None and predicted_permanent is None:
         # Model never permanently predicts EOL within recorded data
         last_cycle = int(cycles[-1])
         delay_cycles = last_cycle - actual_permanent  # lower bound of delay
+        delay_is_lower_bound = True
     else:
         delay_cycles = None
 
@@ -234,6 +236,7 @@ def compute_eol_detection_delay(df: pd.DataFrame) -> dict:
         "predicted_first_touch_eol_cycle": predicted_first_touch,
         "predicted_permanent_eol_cycle": predicted_permanent,
         "detection_delay_cycles": delay_cycles,
+        "detection_delay_is_lower_bound": delay_is_lower_bound,
         "delay_interpretation": _interpret_delay(delay_cycles, predicted_permanent, actual_permanent),
     }
 
@@ -244,8 +247,8 @@ def _interpret_delay(delay, pred_perm, actual_perm):
         return "Battery did not permanently reach EOL within recorded data."
     if pred_perm is None:
         return (
-            f"Actual permanent EOL at cycle {actual_perm}, but model predictions "
-            f"never permanently crossed the 70% threshold — model fails to detect EOL."
+            f"The model did not permanently cross the 70% EOL threshold within the "
+            f"recorded dataset; the detection delay is therefore at least {delay} cycles."
         )
     if delay is None:
         return "Insufficient data to compute detection delay."
@@ -503,11 +506,19 @@ def _evaluate_hypothesis(phase_metrics: dict, eol_delay: dict) -> dict:
 
     # Criterion 3: EOL detection delay
     delay = eol_delay.get("detection_delay_cycles")
+    delay_is_lower_bound = eol_delay.get("detection_delay_is_lower_bound", False)
     if delay is not None:
-        if delay > 0:
+        if delay > 0 and not delay_is_lower_bound:
             findings.append(
                 f"EOL detection is delayed by {delay} cycles — "
                 f"model fails to flag end-of-life in a timely manner."
+            )
+            criteria_met += 1
+        elif delay > 0 and delay_is_lower_bound:
+            findings.append(
+                f"Actual permanent EOL at cycle {eol_delay.get('actual_permanent_eol_cycle')}, "
+                f"but predicted permanent EOL never crossed. "
+                f"Minimum observed detection gap is {delay} cycles."
             )
             criteria_met += 1
         elif delay == 0:
@@ -517,17 +528,7 @@ def _evaluate_hypothesis(phase_metrics: dict, eol_delay: dict) -> dict:
                 f"EOL detected {abs(delay)} cycles early — model is conservative."
             )
     else:
-        actual_perm = eol_delay.get("actual_permanent_eol_cycle")
-        pred_perm = eol_delay.get("predicted_permanent_eol_cycle")
-        if actual_perm is not None and pred_perm is None:
-            findings.append(
-                f"Actual permanent EOL at cycle {actual_perm}, but model "
-                f"predictions never permanently cross the threshold — "
-                f"model completely fails to detect EOL."
-            )
-            criteria_met += 1
-        else:
-            findings.append("EOL not reached in recorded data; delay not applicable.")
+        findings.append("EOL not reached in recorded data; delay not applicable.")
 
     supported = criteria_met >= 2
     return {

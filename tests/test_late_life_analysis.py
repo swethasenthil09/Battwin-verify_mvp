@@ -263,6 +263,7 @@ class TestEolDetectionDelay:
         assert result["actual_permanent_eol_cycle"] is not None
         assert result["predicted_permanent_eol_cycle"] is not None
         assert result["detection_delay_cycles"] > 0
+        assert result.get("detection_delay_is_lower_bound") is False
 
     def test_detection_delay_model_never_detects(self):
         """Model predictions never drop below threshold."""
@@ -277,6 +278,7 @@ class TestEolDetectionDelay:
         # Delay is a lower bound (last_cycle - actual_perm)
         assert result["detection_delay_cycles"] is not None
         assert result["detection_delay_cycles"] > 0
+        assert result.get("detection_delay_is_lower_bound") is True
 
 
 # ---------------------------------------------------------------------------

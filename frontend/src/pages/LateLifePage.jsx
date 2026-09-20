@@ -143,7 +143,7 @@ export default function LateLifePage({ lateLifeData, selectedBattery }) {
                     : '#F59E0B',
                 }}>
                   {eol.detection_delay_cycles != null
-                    ? `${eol.detection_delay_cycles > 0 ? '+' : ''}${eol.detection_delay_cycles}`
+                    ? (eol.detection_delay_is_lower_bound ? '≥' : (eol.detection_delay_cycles > 0 ? '+' : '')) + eol.detection_delay_cycles
                     : '—'}
                 </span>
                 <span style={{ fontSize: '13px', color: 'var(--muted)' }}>cycles</span>
