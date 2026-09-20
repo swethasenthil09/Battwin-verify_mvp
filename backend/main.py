@@ -305,3 +305,41 @@ def data_masking_experiment_endpoint():
         with open(fpath) as f:
             return json.load(f)
     return {"experiment_name": "Experiment C: Sensor Packet Dropout", "masking_results": []}
+
+# --- Late-Life Prediction Reliability Analysis ---
+
+try:
+    from backend.services.late_life_service import compute_late_life_analysis
+except ImportError:
+    from services.late_life_service import compute_late_life_analysis
+
+@app.get("/api/battery/{battery_id}/late-life-analysis")
+def battery_late_life_analysis(battery_id: str):
+    """Phase-segmented late-life prediction reliability analysis."""
+    bid = battery_id.upper()
+
+    # Prefer pre-computed results from the pipeline
+    ll_path = os.path.join(DATA, "late_life_analysis.json")
+    if os.path.exists(ll_path):
+        with open(ll_path) as f:
+            all_results = json.load(f)
+        per_battery = all_results.get("per_battery_results", {})
+        if bid in per_battery:
+            return per_battery[bid]
+
+    # Fallback: compute on-the-fly from analysis CSV
+    fpath = os.path.join(DATA, f"{bid.lower()}_full_analysis.csv")
+    if not os.path.exists(fpath):
+        raise HTTPException(404, f"No analysis data found for battery {bid}")
+
+    df = pd.read_csv(fpath)
+    return compute_late_life_analysis(df, bid)
+
+@app.get("/api/late-life-analysis")
+def all_late_life_analysis():
+    """Returns the full late-life analysis including aggregate results."""
+    ll_path = os.path.join(DATA, "late_life_analysis.json")
+    if os.path.exists(ll_path):
+        with open(ll_path) as f:
+            return json.load(f)
+    return {"error": "Late-life analysis not yet generated. Run scripts/late_life_analysis.py."}

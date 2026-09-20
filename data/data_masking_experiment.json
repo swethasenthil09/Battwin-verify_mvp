@@ -5,33 +5,33 @@
     {
       "sensor_dropout_pct": 0,
       "data_completeness_rating": 1.0,
-      "mae_pct": 1.91,
-      "rmse_pct": 2.27,
-      "reliability_score": 82.35,
+      "mae_pct": 2.05,
+      "rmse_pct": 2.39,
+      "reliability_score": 82.18,
       "status": "Nominal"
     },
     {
       "sensor_dropout_pct": 10,
       "data_completeness_rating": 0.9,
-      "mae_pct": 2.26,
-      "rmse_pct": 2.91,
-      "reliability_score": 80.42,
+      "mae_pct": 2.39,
+      "rmse_pct": 3.02,
+      "reliability_score": 80.26,
       "status": "Minor Degradation"
     },
     {
       "sensor_dropout_pct": 30,
       "data_completeness_rating": 0.7,
-      "mae_pct": 2.6,
-      "rmse_pct": 3.33,
-      "reliability_score": 76.99,
+      "mae_pct": 2.74,
+      "rmse_pct": 3.45,
+      "reliability_score": 76.81,
       "status": "Moderate Degradation"
     },
     {
       "sensor_dropout_pct": 50,
       "data_completeness_rating": 0.5,
-      "mae_pct": 4.14,
-      "rmse_pct": 5.17,
-      "reliability_score": 72.07,
+      "mae_pct": 4.22,
+      "rmse_pct": 5.23,
+      "reliability_score": 71.97,
       "status": "Severe Dropout / High Risk"
     }
   ]
