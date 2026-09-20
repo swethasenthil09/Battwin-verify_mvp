@@ -4,10 +4,10 @@
     "model_type": "2-RC Equivalent Circuit Model (ECM Curve-Fitted)",
     "ecm_parameters": {
       "R0_initial_ohms": 0.01,
-      "R1_charge_transfer_ohms": 0.0615,
-      "C1_capacitance_farads": 597.3,
-      "R2_diffusion_ohms": 0.0955,
-      "C2_capacitance_farads": 312.8,
+      "R1_charge_transfer_ohms": 0.0607,
+      "C1_capacitance_farads": 383.9,
+      "R2_diffusion_ohms": 0.0964,
+      "C2_capacitance_farads": 308.2,
       "R0_growth_rate_per_cycle": 1e-05
     },
     "voltage_simulation_mae_volts": 0.0085,
@@ -1211,9 +1211,9 @@
     "ecm_parameters": {
       "R0_initial_ohms": 0.01,
       "R1_charge_transfer_ohms": 0.001,
-      "C1_capacitance_farads": 500000.0,
-      "R2_diffusion_ohms": 0.1592,
-      "C2_capacitance_farads": 31399.7,
+      "C1_capacitance_farads": 100991.2,
+      "R2_diffusion_ohms": 0.1593,
+      "C2_capacitance_farads": 31396.2,
       "R0_growth_rate_per_cycle": 1e-05
     },
     "voltage_simulation_mae_volts": 0.0101,
@@ -1451,7 +1451,7 @@
         "measured_voltage_mean": 3.564,
         "ecm_simulated_terminal_voltage": 3.557,
         "ohmic_resistance_r0_ohms": 0.01,
-        "v_ocv_v": 3.728,
+        "v_ocv_v": 3.729,
         "v_r0_drop_v": 0.019,
         "v_polarization_drop_v": 0.152
       },
@@ -1768,7 +1768,7 @@
         "ohmic_resistance_r0_ohms": 0.01,
         "v_ocv_v": 3.689,
         "v_r0_drop_v": 0.019,
-        "v_polarization_drop_v": 0.144
+        "v_polarization_drop_v": 0.145
       },
       {
         "discharge_cycle_index": 62,
@@ -2387,7 +2387,7 @@
         "measured_voltage_mean": 3.48,
         "ecm_simulated_terminal_voltage": 3.488,
         "ohmic_resistance_r0_ohms": 0.01,
-        "v_ocv_v": 3.626,
+        "v_ocv_v": 3.627,
         "v_r0_drop_v": 0.017,
         "v_polarization_drop_v": 0.122
       },
@@ -2542,7 +2542,7 @@
         "ohmic_resistance_r0_ohms": 0.01,
         "v_ocv_v": 3.613,
         "v_r0_drop_v": 0.017,
-        "v_polarization_drop_v": 0.117
+        "v_polarization_drop_v": 0.118
       },
       {
         "discharge_cycle_index": 148,
@@ -2603,7 +2603,7 @@
         "measured_voltage_mean": 3.475,
         "ecm_simulated_terminal_voltage": 3.473,
         "ohmic_resistance_r0_ohms": 0.01,
-        "v_ocv_v": 3.607,
+        "v_ocv_v": 3.608,
         "v_r0_drop_v": 0.017,
         "v_polarization_drop_v": 0.118
       },
@@ -2741,10 +2741,10 @@
     "ecm_parameters": {
       "R0_initial_ohms": 0.01,
       "R1_charge_transfer_ohms": 0.001,
-      "C1_capacitance_farads": 495527.0,
+      "C1_capacitance_farads": 50671.1,
       "R2_diffusion_ohms": 0.001,
-      "C2_capacitance_farads": 575270.1,
-      "R0_growth_rate_per_cycle": 0.03007
+      "C2_capacitance_farads": 570433.4,
+      "R0_growth_rate_per_cycle": 0.03006
     },
     "voltage_simulation_mae_volts": 0.0171,
     "initial_R0_ohms": 0.0103,
@@ -3469,7 +3469,7 @@
         "ohmic_resistance_r0_ohms": 0.0225,
         "v_ocv_v": 3.506,
         "v_r0_drop_v": 0.039,
-        "v_polarization_drop_v": 0.003
+        "v_polarization_drop_v": 0.004
       },
       {
         "discharge_cycle_index": 81,
@@ -3673,7 +3673,7 @@
         "discharge_cycle_index": 103,
         "measured_voltage_mean": 3.417,
         "ecm_simulated_terminal_voltage": 3.438,
-        "ohmic_resistance_r0_ohms": 0.0255,
+        "ohmic_resistance_r0_ohms": 0.0254,
         "v_ocv_v": 3.485,
         "v_r0_drop_v": 0.044,
         "v_polarization_drop_v": 0.003
@@ -4017,7 +4017,7 @@
         "ecm_simulated_terminal_voltage": 3.401,
         "ohmic_resistance_r0_ohms": 0.0302,
         "v_ocv_v": 3.454,
-        "v_r0_drop_v": 0.05,
+        "v_r0_drop_v": 0.049,
         "v_polarization_drop_v": 0.003
       },
       {
@@ -4271,9 +4271,9 @@
     "ecm_parameters": {
       "R0_initial_ohms": 0.01,
       "R1_charge_transfer_ohms": 0.001,
-      "C1_capacitance_farads": 1000.1,
+      "C1_capacitance_farads": 93186.6,
       "R2_diffusion_ohms": 0.1868,
-      "C2_capacitance_farads": 26770.9,
+      "C2_capacitance_farads": 26770.6,
       "R0_growth_rate_per_cycle": 1e-05
     },
     "voltage_simulation_mae_volts": 0.0112,
@@ -4799,7 +4799,7 @@
         "measured_voltage_mean": 3.545,
         "ecm_simulated_terminal_voltage": 3.53,
         "ohmic_resistance_r0_ohms": 0.01,
-        "v_ocv_v": 3.725,
+        "v_ocv_v": 3.726,
         "v_r0_drop_v": 0.02,
         "v_polarization_drop_v": 0.176
       },
@@ -5801,15 +5801,15 @@
     "ecm_parameters": {
       "R0_initial_ohms": 0.0303,
       "R1_charge_transfer_ohms": 0.0156,
-      "C1_capacitance_farads": 3824.7,
+      "C1_capacitance_farads": 3894.6,
       "R2_diffusion_ohms": 0.001,
-      "C2_capacitance_farads": 220422.7,
-      "R0_growth_rate_per_cycle": 0.00677
+      "C2_capacitance_farads": 219668.6,
+      "R0_growth_rate_per_cycle": 0.00676
     },
     "voltage_simulation_mae_volts": 0.0085,
     "initial_R0_ohms": 0.0305,
-    "final_R0_ohms": 0.0447,
-    "resistance_increase_pct": 46.6,
+    "final_R0_ohms": 0.0448,
+    "resistance_increase_pct": 46.9,
     "cycle_simulations": [
       {
         "discharge_cycle_index": 1,
@@ -5824,7 +5824,7 @@
         "discharge_cycle_index": 2,
         "measured_voltage_mean": 3.642,
         "ecm_simulated_terminal_voltage": 3.665,
-        "ohmic_resistance_r0_ohms": 0.0306,
+        "ohmic_resistance_r0_ohms": 0.0307,
         "v_ocv_v": 3.768,
         "v_r0_drop_v": 0.067,
         "v_polarization_drop_v": 0.036
@@ -5842,7 +5842,7 @@
         "discharge_cycle_index": 4,
         "measured_voltage_mean": 3.651,
         "ecm_simulated_terminal_voltage": 3.662,
-        "ohmic_resistance_r0_ohms": 0.0309,
+        "ohmic_resistance_r0_ohms": 0.031,
         "v_ocv_v": 3.763,
         "v_r0_drop_v": 0.066,
         "v_polarization_drop_v": 0.035
@@ -5862,17 +5862,17 @@
         "ecm_simulated_terminal_voltage": 3.658,
         "ohmic_resistance_r0_ohms": 0.0312,
         "v_ocv_v": 3.759,
-        "v_r0_drop_v": 0.065,
+        "v_r0_drop_v": 0.066,
         "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 7,
         "measured_voltage_mean": 3.654,
         "ecm_simulated_terminal_voltage": 3.654,
-        "ohmic_resistance_r0_ohms": 0.0313,
+        "ohmic_resistance_r0_ohms": 0.0314,
         "v_ocv_v": 3.757,
         "v_r0_drop_v": 0.067,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 8,
@@ -5889,23 +5889,23 @@
         "ecm_simulated_terminal_voltage": 3.648,
         "ohmic_resistance_r0_ohms": 0.0316,
         "v_ocv_v": 3.753,
-        "v_r0_drop_v": 0.068,
+        "v_r0_drop_v": 0.069,
         "v_polarization_drop_v": 0.036
       },
       {
         "discharge_cycle_index": 10,
         "measured_voltage_mean": 3.636,
         "ecm_simulated_terminal_voltage": 3.648,
-        "ohmic_resistance_r0_ohms": 0.0317,
+        "ohmic_resistance_r0_ohms": 0.0318,
         "v_ocv_v": 3.751,
         "v_r0_drop_v": 0.068,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 11,
         "measured_voltage_mean": 3.635,
         "ecm_simulated_terminal_voltage": 3.645,
-        "ohmic_resistance_r0_ohms": 0.0318,
+        "ohmic_resistance_r0_ohms": 0.0319,
         "v_ocv_v": 3.749,
         "v_r0_drop_v": 0.069,
         "v_polarization_drop_v": 0.036
@@ -5914,7 +5914,7 @@
         "discharge_cycle_index": 12,
         "measured_voltage_mean": 3.647,
         "ecm_simulated_terminal_voltage": 3.643,
-        "ohmic_resistance_r0_ohms": 0.0319,
+        "ohmic_resistance_r0_ohms": 0.032,
         "v_ocv_v": 3.748,
         "v_r0_drop_v": 0.069,
         "v_polarization_drop_v": 0.036
@@ -5941,7 +5941,7 @@
         "discharge_cycle_index": 15,
         "measured_voltage_mean": 3.645,
         "ecm_simulated_terminal_voltage": 3.639,
-        "ohmic_resistance_r0_ohms": 0.0323,
+        "ohmic_resistance_r0_ohms": 0.0324,
         "v_ocv_v": 3.743,
         "v_r0_drop_v": 0.069,
         "v_polarization_drop_v": 0.035
@@ -5950,7 +5950,7 @@
         "discharge_cycle_index": 16,
         "measured_voltage_mean": 3.631,
         "ecm_simulated_terminal_voltage": 3.635,
-        "ohmic_resistance_r0_ohms": 0.0324,
+        "ohmic_resistance_r0_ohms": 0.0325,
         "v_ocv_v": 3.741,
         "v_r0_drop_v": 0.07,
         "v_polarization_drop_v": 0.036
@@ -5959,7 +5959,7 @@
         "discharge_cycle_index": 17,
         "measured_voltage_mean": 3.636,
         "ecm_simulated_terminal_voltage": 3.634,
-        "ohmic_resistance_r0_ohms": 0.0325,
+        "ohmic_resistance_r0_ohms": 0.0326,
         "v_ocv_v": 3.74,
         "v_r0_drop_v": 0.07,
         "v_polarization_drop_v": 0.036
@@ -5968,7 +5968,7 @@
         "discharge_cycle_index": 18,
         "measured_voltage_mean": 3.625,
         "ecm_simulated_terminal_voltage": 3.634,
-        "ohmic_resistance_r0_ohms": 0.0326,
+        "ohmic_resistance_r0_ohms": 0.0327,
         "v_ocv_v": 3.738,
         "v_r0_drop_v": 0.069,
         "v_polarization_drop_v": 0.035
@@ -5988,7 +5988,7 @@
         "ecm_simulated_terminal_voltage": 3.631,
         "ohmic_resistance_r0_ohms": 0.0329,
         "v_ocv_v": 3.735,
-        "v_r0_drop_v": 0.069,
+        "v_r0_drop_v": 0.07,
         "v_polarization_drop_v": 0.035
       },
       {
@@ -5997,8 +5997,8 @@
         "ecm_simulated_terminal_voltage": 3.628,
         "ohmic_resistance_r0_ohms": 0.033,
         "v_ocv_v": 3.734,
-        "v_r0_drop_v": 0.07,
-        "v_polarization_drop_v": 0.036
+        "v_r0_drop_v": 0.071,
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 22,
@@ -6016,13 +6016,13 @@
         "ohmic_resistance_r0_ohms": 0.0332,
         "v_ocv_v": 3.731,
         "v_r0_drop_v": 0.071,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 24,
         "measured_voltage_mean": 3.642,
         "ecm_simulated_terminal_voltage": 3.623,
-        "ohmic_resistance_r0_ohms": 0.0333,
+        "ohmic_resistance_r0_ohms": 0.0334,
         "v_ocv_v": 3.73,
         "v_r0_drop_v": 0.071,
         "v_polarization_drop_v": 0.035
@@ -6031,16 +6031,16 @@
         "discharge_cycle_index": 25,
         "measured_voltage_mean": 3.61,
         "ecm_simulated_terminal_voltage": 3.622,
-        "ohmic_resistance_r0_ohms": 0.0334,
+        "ohmic_resistance_r0_ohms": 0.0335,
         "v_ocv_v": 3.729,
-        "v_r0_drop_v": 0.071,
-        "v_polarization_drop_v": 0.036
+        "v_r0_drop_v": 0.072,
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 26,
         "measured_voltage_mean": 3.607,
         "ecm_simulated_terminal_voltage": 3.618,
-        "ohmic_resistance_r0_ohms": 0.0335,
+        "ohmic_resistance_r0_ohms": 0.0336,
         "v_ocv_v": 3.727,
         "v_r0_drop_v": 0.073,
         "v_polarization_drop_v": 0.036
@@ -6049,7 +6049,7 @@
         "discharge_cycle_index": 27,
         "measured_voltage_mean": 3.629,
         "ecm_simulated_terminal_voltage": 3.617,
-        "ohmic_resistance_r0_ohms": 0.0336,
+        "ohmic_resistance_r0_ohms": 0.0337,
         "v_ocv_v": 3.726,
         "v_r0_drop_v": 0.073,
         "v_polarization_drop_v": 0.036
@@ -6058,7 +6058,7 @@
         "discharge_cycle_index": 28,
         "measured_voltage_mean": 3.624,
         "ecm_simulated_terminal_voltage": 3.616,
-        "ohmic_resistance_r0_ohms": 0.0337,
+        "ohmic_resistance_r0_ohms": 0.0338,
         "v_ocv_v": 3.725,
         "v_r0_drop_v": 0.073,
         "v_polarization_drop_v": 0.036
@@ -6067,7 +6067,7 @@
         "discharge_cycle_index": 29,
         "measured_voltage_mean": 3.621,
         "ecm_simulated_terminal_voltage": 3.615,
-        "ohmic_resistance_r0_ohms": 0.0338,
+        "ohmic_resistance_r0_ohms": 0.0339,
         "v_ocv_v": 3.723,
         "v_r0_drop_v": 0.073,
         "v_polarization_drop_v": 0.036
@@ -6076,16 +6076,16 @@
         "discharge_cycle_index": 30,
         "measured_voltage_mean": 3.62,
         "ecm_simulated_terminal_voltage": 3.614,
-        "ohmic_resistance_r0_ohms": 0.0339,
+        "ohmic_resistance_r0_ohms": 0.034,
         "v_ocv_v": 3.722,
         "v_r0_drop_v": 0.073,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 31,
         "measured_voltage_mean": 3.613,
         "ecm_simulated_terminal_voltage": 3.612,
-        "ohmic_resistance_r0_ohms": 0.034,
+        "ohmic_resistance_r0_ohms": 0.0341,
         "v_ocv_v": 3.721,
         "v_r0_drop_v": 0.073,
         "v_polarization_drop_v": 0.036
@@ -6114,8 +6114,8 @@
         "ecm_simulated_terminal_voltage": 3.608,
         "ohmic_resistance_r0_ohms": 0.0344,
         "v_ocv_v": 3.717,
-        "v_r0_drop_v": 0.073,
-        "v_polarization_drop_v": 0.036
+        "v_r0_drop_v": 0.074,
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 35,
@@ -6124,7 +6124,7 @@
         "ohmic_resistance_r0_ohms": 0.0345,
         "v_ocv_v": 3.716,
         "v_r0_drop_v": 0.074,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 36,
@@ -6150,8 +6150,8 @@
         "ecm_simulated_terminal_voltage": 3.602,
         "ohmic_resistance_r0_ohms": 0.0348,
         "v_ocv_v": 3.712,
-        "v_r0_drop_v": 0.074,
-        "v_polarization_drop_v": 0.036
+        "v_r0_drop_v": 0.075,
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 39,
@@ -6178,7 +6178,7 @@
         "ohmic_resistance_r0_ohms": 0.0351,
         "v_ocv_v": 3.709,
         "v_r0_drop_v": 0.075,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 42,
@@ -6186,7 +6186,7 @@
         "ecm_simulated_terminal_voltage": 3.597,
         "ohmic_resistance_r0_ohms": 0.0352,
         "v_ocv_v": 3.708,
-        "v_r0_drop_v": 0.075,
+        "v_r0_drop_v": 0.076,
         "v_polarization_drop_v": 0.036
       },
       {
@@ -6241,7 +6241,7 @@
         "ohmic_resistance_r0_ohms": 0.0358,
         "v_ocv_v": 3.701,
         "v_r0_drop_v": 0.076,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 49,
@@ -6256,7 +6256,7 @@
         "discharge_cycle_index": 50,
         "measured_voltage_mean": 3.588,
         "ecm_simulated_terminal_voltage": 3.586,
-        "ohmic_resistance_r0_ohms": 0.0359,
+        "ohmic_resistance_r0_ohms": 0.036,
         "v_ocv_v": 3.699,
         "v_r0_drop_v": 0.077,
         "v_polarization_drop_v": 0.036
@@ -6265,7 +6265,7 @@
         "discharge_cycle_index": 51,
         "measured_voltage_mean": 3.592,
         "ecm_simulated_terminal_voltage": 3.585,
-        "ohmic_resistance_r0_ohms": 0.036,
+        "ohmic_resistance_r0_ohms": 0.0361,
         "v_ocv_v": 3.698,
         "v_r0_drop_v": 0.077,
         "v_polarization_drop_v": 0.035
@@ -6274,7 +6274,7 @@
         "discharge_cycle_index": 52,
         "measured_voltage_mean": 3.602,
         "ecm_simulated_terminal_voltage": 3.583,
-        "ohmic_resistance_r0_ohms": 0.0361,
+        "ohmic_resistance_r0_ohms": 0.0362,
         "v_ocv_v": 3.697,
         "v_r0_drop_v": 0.078,
         "v_polarization_drop_v": 0.036
@@ -6283,7 +6283,7 @@
         "discharge_cycle_index": 53,
         "measured_voltage_mean": 3.595,
         "ecm_simulated_terminal_voltage": 3.582,
-        "ohmic_resistance_r0_ohms": 0.0362,
+        "ohmic_resistance_r0_ohms": 0.0363,
         "v_ocv_v": 3.696,
         "v_r0_drop_v": 0.078,
         "v_polarization_drop_v": 0.036
@@ -6292,16 +6292,16 @@
         "discharge_cycle_index": 54,
         "measured_voltage_mean": 3.584,
         "ecm_simulated_terminal_voltage": 3.58,
-        "ohmic_resistance_r0_ohms": 0.0363,
+        "ohmic_resistance_r0_ohms": 0.0364,
         "v_ocv_v": 3.695,
-        "v_r0_drop_v": 0.078,
+        "v_r0_drop_v": 0.079,
         "v_polarization_drop_v": 0.036
       },
       {
         "discharge_cycle_index": 55,
         "measured_voltage_mean": 3.584,
         "ecm_simulated_terminal_voltage": 3.579,
-        "ohmic_resistance_r0_ohms": 0.0364,
+        "ohmic_resistance_r0_ohms": 0.0365,
         "v_ocv_v": 3.693,
         "v_r0_drop_v": 0.079,
         "v_polarization_drop_v": 0.036
@@ -6310,7 +6310,7 @@
         "discharge_cycle_index": 56,
         "measured_voltage_mean": 3.573,
         "ecm_simulated_terminal_voltage": 3.578,
-        "ohmic_resistance_r0_ohms": 0.0365,
+        "ohmic_resistance_r0_ohms": 0.0366,
         "v_ocv_v": 3.692,
         "v_r0_drop_v": 0.079,
         "v_polarization_drop_v": 0.036
@@ -6319,7 +6319,7 @@
         "discharge_cycle_index": 57,
         "measured_voltage_mean": 3.581,
         "ecm_simulated_terminal_voltage": 3.577,
-        "ohmic_resistance_r0_ohms": 0.0366,
+        "ohmic_resistance_r0_ohms": 0.0367,
         "v_ocv_v": 3.691,
         "v_r0_drop_v": 0.079,
         "v_polarization_drop_v": 0.036
@@ -6328,7 +6328,7 @@
         "discharge_cycle_index": 58,
         "measured_voltage_mean": 3.578,
         "ecm_simulated_terminal_voltage": 3.575,
-        "ohmic_resistance_r0_ohms": 0.0367,
+        "ohmic_resistance_r0_ohms": 0.0368,
         "v_ocv_v": 3.69,
         "v_r0_drop_v": 0.079,
         "v_polarization_drop_v": 0.036
@@ -6337,7 +6337,7 @@
         "discharge_cycle_index": 59,
         "measured_voltage_mean": 3.582,
         "ecm_simulated_terminal_voltage": 3.576,
-        "ohmic_resistance_r0_ohms": 0.0368,
+        "ohmic_resistance_r0_ohms": 0.0369,
         "v_ocv_v": 3.689,
         "v_r0_drop_v": 0.078,
         "v_polarization_drop_v": 0.035
@@ -6346,7 +6346,7 @@
         "discharge_cycle_index": 60,
         "measured_voltage_mean": 3.57,
         "ecm_simulated_terminal_voltage": 3.572,
-        "ohmic_resistance_r0_ohms": 0.0369,
+        "ohmic_resistance_r0_ohms": 0.037,
         "v_ocv_v": 3.688,
         "v_r0_drop_v": 0.08,
         "v_polarization_drop_v": 0.036
@@ -6427,7 +6427,7 @@
         "discharge_cycle_index": 69,
         "measured_voltage_mean": 3.568,
         "ecm_simulated_terminal_voltage": 3.562,
-        "ohmic_resistance_r0_ohms": 0.0377,
+        "ohmic_resistance_r0_ohms": 0.0378,
         "v_ocv_v": 3.679,
         "v_r0_drop_v": 0.081,
         "v_polarization_drop_v": 0.036
@@ -6436,7 +6436,7 @@
         "discharge_cycle_index": 70,
         "measured_voltage_mean": 3.558,
         "ecm_simulated_terminal_voltage": 3.562,
-        "ohmic_resistance_r0_ohms": 0.0378,
+        "ohmic_resistance_r0_ohms": 0.0379,
         "v_ocv_v": 3.678,
         "v_r0_drop_v": 0.081,
         "v_polarization_drop_v": 0.035
@@ -6445,7 +6445,7 @@
         "discharge_cycle_index": 71,
         "measured_voltage_mean": 3.565,
         "ecm_simulated_terminal_voltage": 3.559,
-        "ohmic_resistance_r0_ohms": 0.0379,
+        "ohmic_resistance_r0_ohms": 0.038,
         "v_ocv_v": 3.677,
         "v_r0_drop_v": 0.082,
         "v_polarization_drop_v": 0.036
@@ -6454,7 +6454,7 @@
         "discharge_cycle_index": 72,
         "measured_voltage_mean": 3.569,
         "ecm_simulated_terminal_voltage": 3.56,
-        "ohmic_resistance_r0_ohms": 0.038,
+        "ohmic_resistance_r0_ohms": 0.0381,
         "v_ocv_v": 3.676,
         "v_r0_drop_v": 0.081,
         "v_polarization_drop_v": 0.035
@@ -6463,7 +6463,7 @@
         "discharge_cycle_index": 73,
         "measured_voltage_mean": 3.577,
         "ecm_simulated_terminal_voltage": 3.56,
-        "ohmic_resistance_r0_ohms": 0.0381,
+        "ohmic_resistance_r0_ohms": 0.0382,
         "v_ocv_v": 3.675,
         "v_r0_drop_v": 0.08,
         "v_polarization_drop_v": 0.035
@@ -6472,9 +6472,9 @@
         "discharge_cycle_index": 74,
         "measured_voltage_mean": 3.571,
         "ecm_simulated_terminal_voltage": 3.556,
-        "ohmic_resistance_r0_ohms": 0.0382,
+        "ohmic_resistance_r0_ohms": 0.0383,
         "v_ocv_v": 3.674,
-        "v_r0_drop_v": 0.082,
+        "v_r0_drop_v": 0.083,
         "v_polarization_drop_v": 0.036
       },
       {
@@ -6492,7 +6492,7 @@
         "ecm_simulated_terminal_voltage": 3.556,
         "ohmic_resistance_r0_ohms": 0.0384,
         "v_ocv_v": 3.672,
-        "v_r0_drop_v": 0.081,
+        "v_r0_drop_v": 0.082,
         "v_polarization_drop_v": 0.035
       },
       {
@@ -6501,7 +6501,7 @@
         "ecm_simulated_terminal_voltage": 3.555,
         "ohmic_resistance_r0_ohms": 0.0385,
         "v_ocv_v": 3.672,
-        "v_r0_drop_v": 0.081,
+        "v_r0_drop_v": 0.082,
         "v_polarization_drop_v": 0.035
       },
       {
@@ -6519,14 +6519,14 @@
         "ecm_simulated_terminal_voltage": 3.55,
         "ohmic_resistance_r0_ohms": 0.0387,
         "v_ocv_v": 3.67,
-        "v_r0_drop_v": 0.083,
+        "v_r0_drop_v": 0.084,
         "v_polarization_drop_v": 0.036
       },
       {
         "discharge_cycle_index": 80,
         "measured_voltage_mean": 3.546,
         "ecm_simulated_terminal_voltage": 3.549,
-        "ohmic_resistance_r0_ohms": 0.0387,
+        "ohmic_resistance_r0_ohms": 0.0388,
         "v_ocv_v": 3.669,
         "v_r0_drop_v": 0.084,
         "v_polarization_drop_v": 0.036
@@ -6535,7 +6535,7 @@
         "discharge_cycle_index": 81,
         "measured_voltage_mean": 3.544,
         "ecm_simulated_terminal_voltage": 3.547,
-        "ohmic_resistance_r0_ohms": 0.0388,
+        "ohmic_resistance_r0_ohms": 0.0389,
         "v_ocv_v": 3.668,
         "v_r0_drop_v": 0.085,
         "v_polarization_drop_v": 0.036
@@ -6544,7 +6544,7 @@
         "discharge_cycle_index": 82,
         "measured_voltage_mean": 3.546,
         "ecm_simulated_terminal_voltage": 3.546,
-        "ohmic_resistance_r0_ohms": 0.0389,
+        "ohmic_resistance_r0_ohms": 0.039,
         "v_ocv_v": 3.667,
         "v_r0_drop_v": 0.084,
         "v_polarization_drop_v": 0.036
@@ -6553,7 +6553,7 @@
         "discharge_cycle_index": 83,
         "measured_voltage_mean": 3.529,
         "ecm_simulated_terminal_voltage": 3.545,
-        "ohmic_resistance_r0_ohms": 0.039,
+        "ohmic_resistance_r0_ohms": 0.0391,
         "v_ocv_v": 3.666,
         "v_r0_drop_v": 0.085,
         "v_polarization_drop_v": 0.036
@@ -6562,7 +6562,7 @@
         "discharge_cycle_index": 84,
         "measured_voltage_mean": 3.544,
         "ecm_simulated_terminal_voltage": 3.544,
-        "ohmic_resistance_r0_ohms": 0.0391,
+        "ohmic_resistance_r0_ohms": 0.0392,
         "v_ocv_v": 3.665,
         "v_r0_drop_v": 0.085,
         "v_polarization_drop_v": 0.036
@@ -6591,7 +6591,7 @@
         "ecm_simulated_terminal_voltage": 3.544,
         "ohmic_resistance_r0_ohms": 0.0394,
         "v_ocv_v": 3.662,
-        "v_r0_drop_v": 0.083,
+        "v_r0_drop_v": 0.084,
         "v_polarization_drop_v": 0.035
       },
       {
@@ -6616,7 +6616,7 @@
         "discharge_cycle_index": 90,
         "measured_voltage_mean": 3.536,
         "ecm_simulated_terminal_voltage": 3.538,
-        "ohmic_resistance_r0_ohms": 0.0396,
+        "ohmic_resistance_r0_ohms": 0.0397,
         "v_ocv_v": 3.659,
         "v_r0_drop_v": 0.085,
         "v_polarization_drop_v": 0.036
@@ -6625,25 +6625,25 @@
         "discharge_cycle_index": 91,
         "measured_voltage_mean": 3.532,
         "ecm_simulated_terminal_voltage": 3.537,
-        "ohmic_resistance_r0_ohms": 0.0397,
+        "ohmic_resistance_r0_ohms": 0.0398,
         "v_ocv_v": 3.659,
-        "v_r0_drop_v": 0.085,
+        "v_r0_drop_v": 0.086,
         "v_polarization_drop_v": 0.036
       },
       {
         "discharge_cycle_index": 92,
         "measured_voltage_mean": 3.545,
         "ecm_simulated_terminal_voltage": 3.537,
-        "ohmic_resistance_r0_ohms": 0.0398,
+        "ohmic_resistance_r0_ohms": 0.0399,
         "v_ocv_v": 3.658,
         "v_r0_drop_v": 0.085,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 93,
         "measured_voltage_mean": 3.525,
         "ecm_simulated_terminal_voltage": 3.534,
-        "ohmic_resistance_r0_ohms": 0.0399,
+        "ohmic_resistance_r0_ohms": 0.04,
         "v_ocv_v": 3.657,
         "v_r0_drop_v": 0.087,
         "v_polarization_drop_v": 0.036
@@ -6673,7 +6673,7 @@
         "ohmic_resistance_r0_ohms": 0.0402,
         "v_ocv_v": 3.654,
         "v_r0_drop_v": 0.086,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 97,
@@ -6688,7 +6688,7 @@
         "discharge_cycle_index": 98,
         "measured_voltage_mean": 3.546,
         "ecm_simulated_terminal_voltage": 3.533,
-        "ohmic_resistance_r0_ohms": 0.0403,
+        "ohmic_resistance_r0_ohms": 0.0404,
         "v_ocv_v": 3.652,
         "v_r0_drop_v": 0.085,
         "v_polarization_drop_v": 0.035
@@ -6697,16 +6697,16 @@
         "discharge_cycle_index": 99,
         "measured_voltage_mean": 3.53,
         "ecm_simulated_terminal_voltage": 3.528,
-        "ohmic_resistance_r0_ohms": 0.0404,
+        "ohmic_resistance_r0_ohms": 0.0405,
         "v_ocv_v": 3.651,
-        "v_r0_drop_v": 0.087,
+        "v_r0_drop_v": 0.088,
         "v_polarization_drop_v": 0.036
       },
       {
         "discharge_cycle_index": 100,
         "measured_voltage_mean": 3.542,
         "ecm_simulated_terminal_voltage": 3.527,
-        "ohmic_resistance_r0_ohms": 0.0405,
+        "ohmic_resistance_r0_ohms": 0.0406,
         "v_ocv_v": 3.651,
         "v_r0_drop_v": 0.088,
         "v_polarization_drop_v": 0.036
@@ -6715,7 +6715,7 @@
         "discharge_cycle_index": 101,
         "measured_voltage_mean": 3.513,
         "ecm_simulated_terminal_voltage": 3.526,
-        "ohmic_resistance_r0_ohms": 0.0406,
+        "ohmic_resistance_r0_ohms": 0.0407,
         "v_ocv_v": 3.65,
         "v_r0_drop_v": 0.088,
         "v_polarization_drop_v": 0.036
@@ -6760,7 +6760,7 @@
         "discharge_cycle_index": 106,
         "measured_voltage_mean": 3.529,
         "ecm_simulated_terminal_voltage": 3.521,
-        "ohmic_resistance_r0_ohms": 0.041,
+        "ohmic_resistance_r0_ohms": 0.0411,
         "v_ocv_v": 3.645,
         "v_r0_drop_v": 0.089,
         "v_polarization_drop_v": 0.036
@@ -6769,7 +6769,7 @@
         "discharge_cycle_index": 107,
         "measured_voltage_mean": 3.511,
         "ecm_simulated_terminal_voltage": 3.519,
-        "ohmic_resistance_r0_ohms": 0.0411,
+        "ohmic_resistance_r0_ohms": 0.0412,
         "v_ocv_v": 3.644,
         "v_r0_drop_v": 0.089,
         "v_polarization_drop_v": 0.036
@@ -6778,10 +6778,10 @@
         "discharge_cycle_index": 108,
         "measured_voltage_mean": 3.519,
         "ecm_simulated_terminal_voltage": 3.52,
-        "ohmic_resistance_r0_ohms": 0.0412,
+        "ohmic_resistance_r0_ohms": 0.0413,
         "v_ocv_v": 3.644,
         "v_r0_drop_v": 0.088,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 109,
@@ -6798,8 +6798,8 @@
         "ecm_simulated_terminal_voltage": 3.518,
         "ohmic_resistance_r0_ohms": 0.0414,
         "v_ocv_v": 3.642,
-        "v_r0_drop_v": 0.088,
-        "v_polarization_drop_v": 0.036
+        "v_r0_drop_v": 0.089,
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 111,
@@ -6823,7 +6823,7 @@
         "discharge_cycle_index": 113,
         "measured_voltage_mean": 3.499,
         "ecm_simulated_terminal_voltage": 3.516,
-        "ohmic_resistance_r0_ohms": 0.0416,
+        "ohmic_resistance_r0_ohms": 0.0417,
         "v_ocv_v": 3.639,
         "v_r0_drop_v": 0.088,
         "v_polarization_drop_v": 0.035
@@ -6832,7 +6832,7 @@
         "discharge_cycle_index": 114,
         "measured_voltage_mean": 3.526,
         "ecm_simulated_terminal_voltage": 3.515,
-        "ohmic_resistance_r0_ohms": 0.0417,
+        "ohmic_resistance_r0_ohms": 0.0418,
         "v_ocv_v": 3.638,
         "v_r0_drop_v": 0.088,
         "v_polarization_drop_v": 0.035
@@ -6841,9 +6841,9 @@
         "discharge_cycle_index": 115,
         "measured_voltage_mean": 3.515,
         "ecm_simulated_terminal_voltage": 3.511,
-        "ohmic_resistance_r0_ohms": 0.0418,
+        "ohmic_resistance_r0_ohms": 0.0419,
         "v_ocv_v": 3.638,
-        "v_r0_drop_v": 0.09,
+        "v_r0_drop_v": 0.091,
         "v_polarization_drop_v": 0.036
       },
       {
@@ -6852,7 +6852,7 @@
         "ecm_simulated_terminal_voltage": 3.51,
         "ohmic_resistance_r0_ohms": 0.0419,
         "v_ocv_v": 3.637,
-        "v_r0_drop_v": 0.09,
+        "v_r0_drop_v": 0.091,
         "v_polarization_drop_v": 0.036
       },
       {
@@ -6880,13 +6880,13 @@
         "ohmic_resistance_r0_ohms": 0.0422,
         "v_ocv_v": 3.634,
         "v_r0_drop_v": 0.09,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 120,
         "measured_voltage_mean": 3.507,
         "ecm_simulated_terminal_voltage": 3.509,
-        "ohmic_resistance_r0_ohms": 0.0422,
+        "ohmic_resistance_r0_ohms": 0.0423,
         "v_ocv_v": 3.633,
         "v_r0_drop_v": 0.089,
         "v_polarization_drop_v": 0.035
@@ -6895,7 +6895,7 @@
         "discharge_cycle_index": 121,
         "measured_voltage_mean": 3.525,
         "ecm_simulated_terminal_voltage": 3.506,
-        "ohmic_resistance_r0_ohms": 0.0423,
+        "ohmic_resistance_r0_ohms": 0.0424,
         "v_ocv_v": 3.633,
         "v_r0_drop_v": 0.091,
         "v_polarization_drop_v": 0.036
@@ -6904,7 +6904,7 @@
         "discharge_cycle_index": 122,
         "measured_voltage_mean": 3.521,
         "ecm_simulated_terminal_voltage": 3.504,
-        "ohmic_resistance_r0_ohms": 0.0424,
+        "ohmic_resistance_r0_ohms": 0.0425,
         "v_ocv_v": 3.632,
         "v_r0_drop_v": 0.092,
         "v_polarization_drop_v": 0.036
@@ -6940,7 +6940,7 @@
         "discharge_cycle_index": 126,
         "measured_voltage_mean": 3.512,
         "ecm_simulated_terminal_voltage": 3.503,
-        "ohmic_resistance_r0_ohms": 0.0427,
+        "ohmic_resistance_r0_ohms": 0.0428,
         "v_ocv_v": 3.628,
         "v_r0_drop_v": 0.09,
         "v_polarization_drop_v": 0.035
@@ -6949,7 +6949,7 @@
         "discharge_cycle_index": 127,
         "measured_voltage_mean": 3.488,
         "ecm_simulated_terminal_voltage": 3.499,
-        "ohmic_resistance_r0_ohms": 0.0428,
+        "ohmic_resistance_r0_ohms": 0.0429,
         "v_ocv_v": 3.628,
         "v_r0_drop_v": 0.093,
         "v_polarization_drop_v": 0.036
@@ -6958,7 +6958,7 @@
         "discharge_cycle_index": 128,
         "measured_voltage_mean": 3.503,
         "ecm_simulated_terminal_voltage": 3.499,
-        "ohmic_resistance_r0_ohms": 0.0429,
+        "ohmic_resistance_r0_ohms": 0.043,
         "v_ocv_v": 3.627,
         "v_r0_drop_v": 0.092,
         "v_polarization_drop_v": 0.036
@@ -6969,7 +6969,7 @@
         "ecm_simulated_terminal_voltage": 3.498,
         "ohmic_resistance_r0_ohms": 0.043,
         "v_ocv_v": 3.626,
-        "v_r0_drop_v": 0.092,
+        "v_r0_drop_v": 0.093,
         "v_polarization_drop_v": 0.036
       },
       {
@@ -6996,14 +6996,14 @@
         "ecm_simulated_terminal_voltage": 3.494,
         "ohmic_resistance_r0_ohms": 0.0433,
         "v_ocv_v": 3.624,
-        "v_r0_drop_v": 0.093,
+        "v_r0_drop_v": 0.094,
         "v_polarization_drop_v": 0.036
       },
       {
         "discharge_cycle_index": 133,
         "measured_voltage_mean": 3.488,
         "ecm_simulated_terminal_voltage": 3.493,
-        "ohmic_resistance_r0_ohms": 0.0433,
+        "ohmic_resistance_r0_ohms": 0.0434,
         "v_ocv_v": 3.623,
         "v_r0_drop_v": 0.094,
         "v_polarization_drop_v": 0.036
@@ -7012,19 +7012,19 @@
         "discharge_cycle_index": 134,
         "measured_voltage_mean": 3.496,
         "ecm_simulated_terminal_voltage": 3.494,
-        "ohmic_resistance_r0_ohms": 0.0434,
+        "ohmic_resistance_r0_ohms": 0.0435,
         "v_ocv_v": 3.622,
-        "v_r0_drop_v": 0.092,
+        "v_r0_drop_v": 0.093,
         "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 135,
         "measured_voltage_mean": 3.503,
         "ecm_simulated_terminal_voltage": 3.493,
-        "ohmic_resistance_r0_ohms": 0.0435,
+        "ohmic_resistance_r0_ohms": 0.0436,
         "v_ocv_v": 3.621,
         "v_r0_drop_v": 0.093,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 136,
@@ -7042,7 +7042,7 @@
         "ohmic_resistance_r0_ohms": 0.0437,
         "v_ocv_v": 3.62,
         "v_r0_drop_v": 0.093,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 138,
@@ -7057,25 +7057,25 @@
         "discharge_cycle_index": 139,
         "measured_voltage_mean": 3.466,
         "ecm_simulated_terminal_voltage": 3.489,
-        "ohmic_resistance_r0_ohms": 0.0438,
+        "ohmic_resistance_r0_ohms": 0.0439,
         "v_ocv_v": 3.618,
         "v_r0_drop_v": 0.094,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 140,
         "measured_voltage_mean": 3.481,
         "ecm_simulated_terminal_voltage": 3.488,
-        "ohmic_resistance_r0_ohms": 0.0439,
+        "ohmic_resistance_r0_ohms": 0.044,
         "v_ocv_v": 3.617,
-        "v_r0_drop_v": 0.093,
+        "v_r0_drop_v": 0.094,
         "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 141,
         "measured_voltage_mean": 3.485,
         "ecm_simulated_terminal_voltage": 3.487,
-        "ohmic_resistance_r0_ohms": 0.044,
+        "ohmic_resistance_r0_ohms": 0.0441,
         "v_ocv_v": 3.616,
         "v_r0_drop_v": 0.094,
         "v_polarization_drop_v": 0.035
@@ -7087,7 +7087,7 @@
         "ohmic_resistance_r0_ohms": 0.0441,
         "v_ocv_v": 3.616,
         "v_r0_drop_v": 0.094,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 143,
@@ -7102,7 +7102,7 @@
         "discharge_cycle_index": 144,
         "measured_voltage_mean": 3.476,
         "ecm_simulated_terminal_voltage": 3.485,
-        "ohmic_resistance_r0_ohms": 0.0442,
+        "ohmic_resistance_r0_ohms": 0.0443,
         "v_ocv_v": 3.614,
         "v_r0_drop_v": 0.094,
         "v_polarization_drop_v": 0.035
@@ -7111,7 +7111,7 @@
         "discharge_cycle_index": 145,
         "measured_voltage_mean": 3.463,
         "ecm_simulated_terminal_voltage": 3.484,
-        "ohmic_resistance_r0_ohms": 0.0443,
+        "ohmic_resistance_r0_ohms": 0.0444,
         "v_ocv_v": 3.613,
         "v_r0_drop_v": 0.094,
         "v_polarization_drop_v": 0.035
@@ -7120,10 +7120,10 @@
         "discharge_cycle_index": 146,
         "measured_voltage_mean": 3.481,
         "ecm_simulated_terminal_voltage": 3.482,
-        "ohmic_resistance_r0_ohms": 0.0444,
+        "ohmic_resistance_r0_ohms": 0.0445,
         "v_ocv_v": 3.612,
         "v_r0_drop_v": 0.095,
-        "v_polarization_drop_v": 0.036
+        "v_polarization_drop_v": 0.035
       },
       {
         "discharge_cycle_index": 147,
@@ -7156,7 +7156,7 @@
         "discharge_cycle_index": 150,
         "measured_voltage_mean": 3.459,
         "ecm_simulated_terminal_voltage": 3.476,
-        "ohmic_resistance_r0_ohms": 0.0447,
+        "ohmic_resistance_r0_ohms": 0.0448,
         "v_ocv_v": 3.609,
         "v_r0_drop_v": 0.097,
         "v_polarization_drop_v": 0.036

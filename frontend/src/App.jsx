@@ -6,6 +6,7 @@ import ReliabilityPage from './pages/ReliabilityPage';
 import InferencePage from './pages/InferencePage';
 import AnalyticsPage from './pages/AnalyticsPage';
 import ExplainabilityPage from './pages/ExplainabilityPage';
+import LateLifePage from './pages/LateLifePage';
 import { EMBEDDED_DATA } from './data/embeddedData';
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
   const [calceData, setCalceData] = useState(null);
   const [ecmData, setEcmData] = useState(null);
   const [maskingData, setMaskingData] = useState(null);
+  const [lateLifeData, setLateLifeData] = useState(null);
 
   // Check live API server connection
   useEffect(() => {
@@ -56,7 +58,7 @@ export default function App() {
     async function loadData() {
       if (isLive) {
         try {
-          const [anRes, relRes, rulRes, recRes, shapRes, calceRes, ecmRes, maskRes] = await Promise.all([
+          const [anRes, relRes, rulRes, recRes, shapRes, calceRes, ecmRes, maskRes, llRes] = await Promise.all([
             fetch(`http://localhost:8000/api/battery/${selectedBattery}/analysis`),
             fetch(`http://localhost:8000/api/battery/${selectedBattery}/reliability`),
             fetch(`http://localhost:8000/api/battery/${selectedBattery}/rul`),
@@ -65,6 +67,7 @@ export default function App() {
             fetch(`http://localhost:8000/api/domain-shift/cross-dataset`),
             fetch(`http://localhost:8000/api/battery/${selectedBattery}/ecm-simulation`),
             fetch(`http://localhost:8000/api/experiments/data-masking`),
+            fetch(`http://localhost:8000/api/battery/${selectedBattery}/late-life-analysis`),
           ]);
 
           if (!ignore && anRes.ok) setAnalysisData(await anRes.json());
@@ -75,6 +78,7 @@ export default function App() {
           if (!ignore && calceRes.ok) setCalceData(await calceRes.json());
           if (!ignore && ecmRes.ok) setEcmData(await ecmRes.json());
           if (!ignore && maskRes.ok) setMaskingData(await maskRes.json());
+          if (!ignore && llRes.ok) setLateLifeData(await llRes.json());
           return;
         } catch (e) {
           console.warn('Live API fetch failed, falling back to embedded snapshot:', e);
@@ -92,6 +96,12 @@ export default function App() {
         setCalceData(EMBEDDED_DATA.calce_domain_shift || null);
         setEcmData(EMBEDDED_DATA.ecm_physics || null);
         setMaskingData(EMBEDDED_DATA.data_masking_experiment || null);
+        const llEmbed = EMBEDDED_DATA.late_life_analysis;
+        if (llEmbed && llEmbed.per_battery_results && llEmbed.per_battery_results[selectedBattery]) {
+          setLateLifeData(llEmbed.per_battery_results[selectedBattery]);
+        } else {
+          setLateLifeData(llEmbed || null);
+        }
       }
     }
 
@@ -156,6 +166,13 @@ export default function App() {
               calceData={calceData}
               ecmData={ecmData}
               maskingData={maskingData}
+            />
+          )}
+
+          {activeTab === 'latelife' && (
+            <LateLifePage
+              lateLifeData={lateLifeData}
+              selectedBattery={selectedBattery}
             />
           )}
         </main>

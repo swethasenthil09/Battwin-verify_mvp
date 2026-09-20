@@ -1,0 +1,491 @@
+{
+  "analysis_name": "Late-Life Prediction Reliability Analysis",
+  "dataset": "NASA PCoE Li-ion Battery Aging Dataset",
+  "batteries_analyzed": [
+    "B0005",
+    "B0006",
+    "B0007",
+    "B0018"
+  ],
+  "phase_boundaries": {
+    "early": {
+      "start_pct": 0.0,
+      "end_pct": 0.4
+    },
+    "mid": {
+      "start_pct": 0.4,
+      "end_pct": 0.7
+    },
+    "late": {
+      "start_pct": 0.7,
+      "end_pct": 1.0
+    }
+  },
+  "per_battery_results": {
+    "B0005": {
+      "battery_id": "B0005",
+      "total_cycles": 168,
+      "phase_boundaries": {
+        "early": {
+          "start_pct": 0.0,
+          "end_pct": 0.4
+        },
+        "mid": {
+          "start_pct": 0.4,
+          "end_pct": 0.7
+        },
+        "late": {
+          "start_pct": 0.7,
+          "end_pct": 1.0
+        }
+      },
+      "phase_metrics": {
+        "early": {
+          "n_cycles": 67,
+          "mae": 0.1006,
+          "rmse": 0.1375,
+          "signed_bias": 0.0088,
+          "max_abs_error": 0.4869,
+          "overestimation_rate": 0.5075,
+          "cycle_range": [
+            1,
+            67
+          ]
+        },
+        "mid": {
+          "n_cycles": 50,
+          "mae": 0.122,
+          "rmse": 0.1503,
+          "signed_bias": 0.0048,
+          "max_abs_error": 0.3821,
+          "overestimation_rate": 0.5,
+          "cycle_range": [
+            68,
+            117
+          ]
+        },
+        "late": {
+          "n_cycles": 51,
+          "mae": 0.11,
+          "rmse": 0.1338,
+          "signed_bias": 0.0047,
+          "max_abs_error": 0.3128,
+          "overestimation_rate": 0.5098,
+          "cycle_range": [
+            118,
+            168
+          ]
+        }
+      },
+      "overall_metrics": {
+        "n_cycles": 168,
+        "mae": 0.1098,
+        "rmse": 0.1403,
+        "signed_bias": 0.0064,
+        "max_abs_error": 0.4869,
+        "overestimation_rate": 0.506,
+        "cycle_range": [
+          1,
+          168
+        ]
+      },
+      "late_life_overestimation": {
+        "mean_overestimation_pct": 0.1126,
+        "max_overestimation_pct": 0.3128,
+        "overestimation_rate": 0.5098,
+        "n_overestimating_cycles": 26,
+        "n_late_cycles": 51
+      },
+      "eol_detection_delay": {
+        "actual_first_touch_eol_cycle": 125,
+        "actual_permanent_eol_cycle": 125,
+        "predicted_first_touch_eol_cycle": 124,
+        "predicted_permanent_eol_cycle": 124,
+        "detection_delay_cycles": -1,
+        "delay_interpretation": "Model detected permanent EOL 1 cycles EARLY (actual: cycle 125, predicted: cycle 124). Conservative \u2014 model is cautious near end of life."
+      },
+      "drift_onset": {
+        "drift_onset_cycle": null,
+        "drift_onset_lifecycle_pct": null,
+        "detection_method": "rolling_window_sustained_bias",
+        "parameters": {
+          "rolling_window": 10,
+          "sustained_count": 5,
+          "threshold_sigma": 1.0
+        },
+        "threshold_value": 0.1466,
+        "global_mean_bias": 0.0064,
+        "global_std_bias": 0.1402,
+        "note": "No sustained systematic drift detected with current parameters. The model's signed error does not show a persistent positive shift above the threshold."
+      },
+      "error_amplification_factor": 1.0934,
+      "hypothesis_evaluation": {
+        "hypothesis": "Late-life predictions are less reliable than early/mid-life predictions",
+        "supported": true,
+        "criteria_met": 2,
+        "criteria_total": 3,
+        "findings": [
+          "Late-life MAE (0.11%) exceeds early-life MAE (0.10%) \u2014 prediction accuracy degrades in late life.",
+          "Late-life signed bias is +0.00% (systematic overestimation of SoH).",
+          "EOL detected 1 cycles early \u2014 model is conservative."
+        ],
+        "conclusion": "SUPPORTED \u2014 2/3 criteria met. The AI model shows measurable degradation in prediction quality during late-life battery operation."
+      }
+    },
+    "B0006": {
+      "battery_id": "B0006",
+      "total_cycles": 168,
+      "phase_boundaries": {
+        "early": {
+          "start_pct": 0.0,
+          "end_pct": 0.4
+        },
+        "mid": {
+          "start_pct": 0.4,
+          "end_pct": 0.7
+        },
+        "late": {
+          "start_pct": 0.7,
+          "end_pct": 1.0
+        }
+      },
+      "phase_metrics": {
+        "early": {
+          "n_cycles": 67,
+          "mae": 0.1227,
+          "rmse": 0.1619,
+          "signed_bias": -0.0133,
+          "max_abs_error": 0.6057,
+          "overestimation_rate": 0.4627,
+          "cycle_range": [
+            1,
+            67
+          ]
+        },
+        "mid": {
+          "n_cycles": 50,
+          "mae": 0.1171,
+          "rmse": 0.1818,
+          "signed_bias": -0.017,
+          "max_abs_error": 0.926,
+          "overestimation_rate": 0.52,
+          "cycle_range": [
+            68,
+            117
+          ]
+        },
+        "late": {
+          "n_cycles": 51,
+          "mae": 0.1001,
+          "rmse": 0.1251,
+          "signed_bias": 0.0105,
+          "max_abs_error": 0.3298,
+          "overestimation_rate": 0.6078,
+          "cycle_range": [
+            118,
+            168
+          ]
+        }
+      },
+      "overall_metrics": {
+        "n_cycles": 168,
+        "mae": 0.1142,
+        "rmse": 0.1583,
+        "signed_bias": -0.0072,
+        "max_abs_error": 0.926,
+        "overestimation_rate": 0.5238,
+        "cycle_range": [
+          1,
+          168
+        ]
+      },
+      "late_life_overestimation": {
+        "mean_overestimation_pct": 0.091,
+        "max_overestimation_pct": 0.3298,
+        "overestimation_rate": 0.6078,
+        "n_overestimating_cycles": 31,
+        "n_late_cycles": 51
+      },
+      "eol_detection_delay": {
+        "actual_first_touch_eol_cycle": 109,
+        "actual_permanent_eol_cycle": 122,
+        "predicted_first_touch_eol_cycle": 108,
+        "predicted_permanent_eol_cycle": 122,
+        "detection_delay_cycles": 0,
+        "delay_interpretation": "Model detected permanent EOL at exactly the correct cycle (122). No detection delay."
+      },
+      "drift_onset": {
+        "drift_onset_cycle": null,
+        "drift_onset_lifecycle_pct": null,
+        "detection_method": "rolling_window_sustained_bias",
+        "parameters": {
+          "rolling_window": 10,
+          "sustained_count": 5,
+          "threshold_sigma": 1.0
+        },
+        "threshold_value": 0.1509,
+        "global_mean_bias": -0.0072,
+        "global_std_bias": 0.1581,
+        "note": "No sustained systematic drift detected with current parameters. The model's signed error does not show a persistent positive shift above the threshold."
+      },
+      "error_amplification_factor": 0.8158,
+      "hypothesis_evaluation": {
+        "hypothesis": "Late-life predictions are less reliable than early/mid-life predictions",
+        "supported": false,
+        "criteria_met": 1,
+        "criteria_total": 3,
+        "findings": [
+          "Late-life MAE (0.10%) does NOT exceed early-life MAE (0.12%) \u2014 no evidence of late-life accuracy degradation for this battery.",
+          "Late-life signed bias is +0.01% (systematic overestimation of SoH).",
+          "EOL detected at the correct cycle \u2014 no delay."
+        ],
+        "conclusion": "NOT CLEARLY SUPPORTED \u2014 only 1/3 criteria met. The evidence for systematic late-life prediction failure is inconclusive for this battery."
+      }
+    },
+    "B0007": {
+      "battery_id": "B0007",
+      "total_cycles": 168,
+      "phase_boundaries": {
+        "early": {
+          "start_pct": 0.0,
+          "end_pct": 0.4
+        },
+        "mid": {
+          "start_pct": 0.4,
+          "end_pct": 0.7
+        },
+        "late": {
+          "start_pct": 0.7,
+          "end_pct": 1.0
+        }
+      },
+      "phase_metrics": {
+        "early": {
+          "n_cycles": 67,
+          "mae": 0.104,
+          "rmse": 0.1373,
+          "signed_bias": 0.0125,
+          "max_abs_error": 0.459,
+          "overestimation_rate": 0.5672,
+          "cycle_range": [
+            1,
+            67
+          ]
+        },
+        "mid": {
+          "n_cycles": 50,
+          "mae": 0.1181,
+          "rmse": 0.1536,
+          "signed_bias": -0.0118,
+          "max_abs_error": 0.3829,
+          "overestimation_rate": 0.4,
+          "cycle_range": [
+            68,
+            117
+          ]
+        },
+        "late": {
+          "n_cycles": 51,
+          "mae": 0.0681,
+          "rmse": 0.0902,
+          "signed_bias": 0.0049,
+          "max_abs_error": 0.2602,
+          "overestimation_rate": 0.5686,
+          "cycle_range": [
+            118,
+            168
+          ]
+        }
+      },
+      "overall_metrics": {
+        "n_cycles": 168,
+        "mae": 0.0973,
+        "rmse": 0.1304,
+        "signed_bias": 0.003,
+        "max_abs_error": 0.459,
+        "overestimation_rate": 0.5179,
+        "cycle_range": [
+          1,
+          168
+        ]
+      },
+      "late_life_overestimation": {
+        "mean_overestimation_pct": 0.0642,
+        "max_overestimation_pct": 0.1988,
+        "overestimation_rate": 0.5686,
+        "n_overestimating_cycles": 29,
+        "n_late_cycles": 51
+      },
+      "eol_detection_delay": {
+        "actual_first_touch_eol_cycle": null,
+        "actual_permanent_eol_cycle": null,
+        "predicted_first_touch_eol_cycle": null,
+        "predicted_permanent_eol_cycle": null,
+        "detection_delay_cycles": null,
+        "delay_interpretation": "Battery did not permanently reach EOL within recorded data."
+      },
+      "drift_onset": {
+        "drift_onset_cycle": null,
+        "drift_onset_lifecycle_pct": null,
+        "detection_method": "rolling_window_sustained_bias",
+        "parameters": {
+          "rolling_window": 10,
+          "sustained_count": 5,
+          "threshold_sigma": 1.0
+        },
+        "threshold_value": 0.1334,
+        "global_mean_bias": 0.003,
+        "global_std_bias": 0.1304,
+        "note": "No sustained systematic drift detected with current parameters. The model's signed error does not show a persistent positive shift above the threshold."
+      },
+      "error_amplification_factor": 0.6548,
+      "hypothesis_evaluation": {
+        "hypothesis": "Late-life predictions are less reliable than early/mid-life predictions",
+        "supported": false,
+        "criteria_met": 1,
+        "criteria_total": 3,
+        "findings": [
+          "Late-life MAE (0.07%) does NOT exceed early-life MAE (0.10%) \u2014 no evidence of late-life accuracy degradation for this battery.",
+          "Late-life signed bias is +0.00% (systematic overestimation of SoH).",
+          "EOL not reached in recorded data; delay not applicable."
+        ],
+        "conclusion": "NOT CLEARLY SUPPORTED \u2014 only 1/3 criteria met. The evidence for systematic late-life prediction failure is inconclusive for this battery."
+      }
+    },
+    "B0018": {
+      "battery_id": "B0018",
+      "total_cycles": 132,
+      "phase_boundaries": {
+        "early": {
+          "start_pct": 0.0,
+          "end_pct": 0.4
+        },
+        "mid": {
+          "start_pct": 0.4,
+          "end_pct": 0.7
+        },
+        "late": {
+          "start_pct": 0.7,
+          "end_pct": 1.0
+        }
+      },
+      "phase_metrics": {
+        "early": {
+          "n_cycles": 53,
+          "mae": 1.5968,
+          "rmse": 1.8396,
+          "signed_bias": 1.5847,
+          "max_abs_error": 3.3931,
+          "overestimation_rate": 0.9811,
+          "cycle_range": [
+            1,
+            53
+          ]
+        },
+        "mid": {
+          "n_cycles": 39,
+          "mae": 1.429,
+          "rmse": 1.6904,
+          "signed_bias": 1.3378,
+          "max_abs_error": 3.3997,
+          "overestimation_rate": 0.8974,
+          "cycle_range": [
+            54,
+            92
+          ]
+        },
+        "late": {
+          "n_cycles": 40,
+          "mae": 3.2581,
+          "rmse": 3.4041,
+          "signed_bias": 3.2581,
+          "max_abs_error": 4.973,
+          "overestimation_rate": 1.0,
+          "cycle_range": [
+            93,
+            132
+          ]
+        }
+      },
+      "overall_metrics": {
+        "n_cycles": 132,
+        "mae": 2.0506,
+        "rmse": 2.3905,
+        "signed_bias": 2.0188,
+        "max_abs_error": 4.973,
+        "overestimation_rate": 0.9621,
+        "cycle_range": [
+          1,
+          132
+        ]
+      },
+      "late_life_overestimation": {
+        "mean_overestimation_pct": 3.2581,
+        "max_overestimation_pct": 4.973,
+        "overestimation_rate": 1.0,
+        "n_overestimating_cycles": 40,
+        "n_late_cycles": 40
+      },
+      "eol_detection_delay": {
+        "actual_first_touch_eol_cycle": 97,
+        "actual_permanent_eol_cycle": 123,
+        "predicted_first_touch_eol_cycle": null,
+        "predicted_permanent_eol_cycle": null,
+        "detection_delay_cycles": 9,
+        "delay_interpretation": "Actual permanent EOL at cycle 123, but model predictions never permanently crossed the 70% threshold \u2014 model fails to detect EOL."
+      },
+      "drift_onset": {
+        "drift_onset_cycle": 100,
+        "drift_onset_lifecycle_pct": 0.7557,
+        "detection_method": "rolling_window_sustained_bias",
+        "parameters": {
+          "rolling_window": 10,
+          "sustained_count": 5,
+          "threshold_sigma": 1.0
+        },
+        "threshold_value": 3.299,
+        "global_mean_bias": 2.0188,
+        "global_std_bias": 1.2802,
+        "note": "Drift onset detected at cycle 100 (75.6% of lifecycle). Rolling bias exceeded threshold (3.299%) for 5+ consecutive windows."
+      },
+      "error_amplification_factor": 2.0404,
+      "hypothesis_evaluation": {
+        "hypothesis": "Late-life predictions are less reliable than early/mid-life predictions",
+        "supported": true,
+        "criteria_met": 3,
+        "criteria_total": 3,
+        "findings": [
+          "Late-life MAE (3.26%) exceeds early-life MAE (1.60%) \u2014 prediction accuracy degrades in late life.",
+          "Late-life signed bias is +3.26% (systematic overestimation of SoH).",
+          "EOL detection is delayed by 9 cycles \u2014 model fails to flag end-of-life in a timely manner."
+        ],
+        "conclusion": "SUPPORTED \u2014 3/3 criteria met. The AI model shows measurable degradation in prediction quality during late-life battery operation."
+      }
+    }
+  },
+  "aggregate_results": {
+    "n_batteries_analyzed": 4,
+    "n_batteries_supporting_hypothesis": 2,
+    "aggregate_mae_by_phase": {
+      "early": 0.481,
+      "mid": 0.4466,
+      "late": 0.8841
+    },
+    "mean_late_life_bias": 0.8196,
+    "eol_detection_delays": [
+      {
+        "battery_id": "B0005",
+        "delay_cycles": -1
+      },
+      {
+        "battery_id": "B0006",
+        "delay_cycles": 0
+      },
+      {
+        "battery_id": "B0018",
+        "delay_cycles": 9
+      }
+    ],
+    "overall_conclusion": "The late-life prediction degradation hypothesis is supported by 2/4 NASA batteries. Mean late-life MAE (0.8841%) vs early-life MAE (0.481%). Mean late-life signed bias: +0.82%."
+  }
+}
