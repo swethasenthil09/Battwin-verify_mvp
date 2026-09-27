@@ -49,7 +49,11 @@ print("\n11. Phase 2: Experiment C Sensor Packet Drop Stress Test...")
 import data_masking_experiment
 data_masking_experiment.run_data_masking_experiment()
 
-print("\n12. Generating Frontend Dashboard Payload...")
+print("\n12. Late-Life Prediction Reliability Analysis...")
+import late_life_analysis
+late_life_analysis.run_late_life_analysis()
+
+print("\n13. Generating Frontend Dashboard Payload...")
 import generate_dashboard_payload
 
 print("\n=== PIPELINE RUN COMPLETE: All data artifacts & Phase 2 modules updated cleanly ===")

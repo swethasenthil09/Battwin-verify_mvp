@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Battery, Wifi, LayoutDashboard, ShieldCheck, Database, Sparkles } from 'lucide-react';
+import { Cpu, Battery, Wifi, LayoutDashboard, ShieldCheck, Database, Sparkles, AlertTriangle } from 'lucide-react';
 
 export default function Sidebar({ selectedBattery, setSelectedBattery, activeTab, setActiveTab, isLive, batteries }) {
   const navItems = [
@@ -8,6 +8,7 @@ export default function Sidebar({ selectedBattery, setSelectedBattery, activeTab
     { id: 'inference', label: 'Live AI Inference', icon: Cpu },
     { id: 'analytics', label: 'Battery & SoC Analytics', icon: Database },
     { id: 'explainability', label: 'Explainability & Domain', icon: Sparkles },
+    { id: 'latelife', label: 'Late-Life Analysis', icon: AlertTriangle },
   ];
 
 

@@ -6,42 +6,42 @@
       {
         "feature_key": "discharge_duration_s",
         "feature_name": "Discharge Duration (s)",
-        "importance_pct": 47.59
+        "importance_pct": 46.95
       },
       {
         "feature_key": "current_mean",
         "feature_name": "Mean Current Draw (A)",
-        "importance_pct": 23.32
+        "importance_pct": 23.39
       },
       {
         "feature_key": "discharge_cycle_index",
         "feature_name": "Discharge Cycle Index",
-        "importance_pct": 17.83
+        "importance_pct": 18.48
       },
       {
         "feature_key": "voltage_mean",
         "feature_name": "Mean Discharge Voltage (V)",
-        "importance_pct": 7.79
+        "importance_pct": 7.74
       },
       {
         "feature_key": "voltage_min",
         "feature_name": "End-of-Discharge Voltage (V)",
-        "importance_pct": 1.02
+        "importance_pct": 0.99
       },
       {
         "feature_key": "temperature_max",
         "feature_name": "Peak Cell Temperature (\u00b0C)",
-        "importance_pct": 0.7
+        "importance_pct": 0.81
       },
       {
         "feature_key": "current_min",
         "feature_name": "Peak Current Draw (A)",
-        "importance_pct": 0.7
+        "importance_pct": 0.69
       },
       {
         "feature_key": "temperature_mean",
         "feature_name": "Mean Cell Temperature (\u00b0C)",
-        "importance_pct": 0.58
+        "importance_pct": 0.5
       },
       {
         "feature_key": "voltage_max",
@@ -58,32 +58,32 @@
       "cycle_13": {
         "discharge_cycle_index": 13,
         "actual_soh_pct": 89.54,
-        "predicted_soh_pct": 90.9,
+        "predicted_soh_pct": 91.11,
         "baseline_mean_soh_pct": 77.89,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 3370.66,
-            "shap_impact_delta": 6.56
+            "shap_impact_delta": 6.54
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 13.0,
-            "shap_impact_delta": 2.91
+            "shap_impact_delta": 3.05
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.92,
-            "shap_impact_delta": 1.23
+            "shap_impact_delta": 1.31
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.54,
-            "shap_impact_delta": 0.79
+            "shap_impact_delta": 0.76
           },
           {
             "feature_key": "voltage_min",
@@ -95,25 +95,25 @@
             "feature_key": "temperature_max",
             "feature_name": "Peak Cell Temperature (\u00b0C)",
             "feature_value": 36.95,
-            "shap_impact_delta": 0.11
-          },
-          {
-            "feature_key": "temperature_mean",
-            "feature_name": "Mean Cell Temperature (\u00b0C)",
-            "feature_value": 30.89,
-            "shap_impact_delta": 0.07
-          },
-          {
-            "feature_key": "voltage_max",
-            "feature_name": "Initial Open-Circuit Voltage (V)",
-            "feature_value": 4.19,
-            "shap_impact_delta": -0.04
+            "shap_impact_delta": 0.12
           },
           {
             "feature_key": "current_min",
             "feature_name": "Peak Current Draw (A)",
             "feature_value": -2.01,
-            "shap_impact_delta": 0.03
+            "shap_impact_delta": 0.1
+          },
+          {
+            "feature_key": "voltage_max",
+            "feature_name": "Initial Open-Circuit Voltage (V)",
+            "feature_value": 4.19,
+            "shap_impact_delta": -0.05
+          },
+          {
+            "feature_key": "temperature_mean",
+            "feature_name": "Mean Cell Temperature (\u00b0C)",
+            "feature_value": 30.89,
+            "shap_impact_delta": 0.04
           },
           {
             "feature_key": "ambient_temperature_C",
@@ -126,62 +126,62 @@
       "cycle_66": {
         "discharge_cycle_index": 66,
         "actual_soh_pct": 76.58,
-        "predicted_soh_pct": 76.97,
+        "predicted_soh_pct": 77.0,
         "baseline_mean_soh_pct": 77.89,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 3050.56,
-            "shap_impact_delta": -4.17
+            "shap_impact_delta": -4.16
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 66.0,
-            "shap_impact_delta": 1.06
+            "shap_impact_delta": 0.99
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.82,
-            "shap_impact_delta": 0.88
+            "shap_impact_delta": 0.96
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.49,
-            "shap_impact_delta": -0.69
+            "shap_impact_delta": -0.7
           },
           {
             "feature_key": "temperature_max",
             "feature_name": "Peak Cell Temperature (\u00b0C)",
             "feature_value": 37.49,
-            "shap_impact_delta": 0.3
+            "shap_impact_delta": 0.35
           },
           {
             "feature_key": "temperature_mean",
             "feature_name": "Mean Cell Temperature (\u00b0C)",
             "feature_value": 30.82,
-            "shap_impact_delta": 0.2
-          },
-          {
-            "feature_key": "voltage_max",
-            "feature_name": "Initial Open-Circuit Voltage (V)",
-            "feature_value": 4.19,
-            "shap_impact_delta": -0.03
+            "shap_impact_delta": 0.13
           },
           {
             "feature_key": "voltage_min",
             "feature_name": "End-of-Discharge Voltage (V)",
             "feature_value": 2.4,
-            "shap_impact_delta": 0.02
+            "shap_impact_delta": 0.03
+          },
+          {
+            "feature_key": "voltage_max",
+            "feature_name": "Initial Open-Circuit Voltage (V)",
+            "feature_value": 4.19,
+            "shap_impact_delta": -0.02
           },
           {
             "feature_key": "current_min",
             "feature_name": "Peak Current Draw (A)",
             "feature_value": -2.01,
-            "shap_impact_delta": 0.01
+            "shap_impact_delta": 0.02
           },
           {
             "feature_key": "ambient_temperature_C",
@@ -194,61 +194,61 @@
       "cycle_132": {
         "discharge_cycle_index": 132,
         "actual_soh_pct": 67.05,
-        "predicted_soh_pct": 71.87,
+        "predicted_soh_pct": 72.03,
         "baseline_mean_soh_pct": 77.89,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 2742.84,
-            "shap_impact_delta": -5.98
+            "shap_impact_delta": -5.92
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 132.0,
-            "shap_impact_delta": -2.12
+            "shap_impact_delta": -2.19
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.78,
-            "shap_impact_delta": 0.87
+            "shap_impact_delta": 0.89
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.45,
-            "shap_impact_delta": -0.72
+            "shap_impact_delta": -0.77
           },
           {
             "feature_key": "temperature_max",
             "feature_name": "Peak Cell Temperature (\u00b0C)",
             "feature_value": 38.37,
-            "shap_impact_delta": 0.28
+            "shap_impact_delta": 0.32
           },
           {
             "feature_key": "temperature_mean",
             "feature_name": "Mean Cell Temperature (\u00b0C)",
             "feature_value": 31.28,
-            "shap_impact_delta": 0.24
+            "shap_impact_delta": 0.25
           },
           {
             "feature_key": "voltage_min",
             "feature_name": "End-of-Discharge Voltage (V)",
             "feature_value": 2.37,
-            "shap_impact_delta": -0.04
-          },
-          {
-            "feature_key": "current_min",
-            "feature_name": "Peak Current Draw (A)",
-            "feature_value": -2.01,
-            "shap_impact_delta": -0.04
+            "shap_impact_delta": 0.05
           },
           {
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.19,
+            "shap_impact_delta": 0.02
+          },
+          {
+            "feature_key": "current_min",
+            "feature_name": "Peak Current Draw (A)",
+            "feature_value": -2.01,
             "shap_impact_delta": -0.02
           },
           {
@@ -268,42 +268,42 @@
       {
         "feature_key": "discharge_duration_s",
         "feature_name": "Discharge Duration (s)",
-        "importance_pct": 47.59
+        "importance_pct": 46.95
       },
       {
         "feature_key": "current_mean",
         "feature_name": "Mean Current Draw (A)",
-        "importance_pct": 23.32
+        "importance_pct": 23.39
       },
       {
         "feature_key": "discharge_cycle_index",
         "feature_name": "Discharge Cycle Index",
-        "importance_pct": 17.83
+        "importance_pct": 18.48
       },
       {
         "feature_key": "voltage_mean",
         "feature_name": "Mean Discharge Voltage (V)",
-        "importance_pct": 7.79
+        "importance_pct": 7.74
       },
       {
         "feature_key": "voltage_min",
         "feature_name": "End-of-Discharge Voltage (V)",
-        "importance_pct": 1.02
+        "importance_pct": 0.99
       },
       {
         "feature_key": "temperature_max",
         "feature_name": "Peak Cell Temperature (\u00b0C)",
-        "importance_pct": 0.7
+        "importance_pct": 0.81
       },
       {
         "feature_key": "current_min",
         "feature_name": "Peak Current Draw (A)",
-        "importance_pct": 0.7
+        "importance_pct": 0.69
       },
       {
         "feature_key": "temperature_mean",
         "feature_name": "Mean Cell Temperature (\u00b0C)",
-        "importance_pct": 0.58
+        "importance_pct": 0.5
       },
       {
         "feature_key": "voltage_max",
@@ -320,38 +320,38 @@
       "cycle_16": {
         "discharge_cycle_index": 16,
         "actual_soh_pct": 90.11,
-        "predicted_soh_pct": 90.15,
+        "predicted_soh_pct": 90.2,
         "baseline_mean_soh_pct": 78.63,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 3429.41,
-            "shap_impact_delta": 6.99
+            "shap_impact_delta": 6.91
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 16.0,
-            "shap_impact_delta": 2.81
+            "shap_impact_delta": 2.96
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.56,
-            "shap_impact_delta": 0.79
+            "shap_impact_delta": 0.76
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.89,
-            "shap_impact_delta": 0.7
+            "shap_impact_delta": 0.67
           },
           {
             "feature_key": "voltage_min",
             "feature_name": "End-of-Discharge Voltage (V)",
             "feature_value": 2.64,
-            "shap_impact_delta": -0.43
+            "shap_impact_delta": -0.41
           },
           {
             "feature_key": "current_min",
@@ -363,7 +363,7 @@
             "feature_key": "temperature_mean",
             "feature_name": "Mean Cell Temperature (\u00b0C)",
             "feature_value": 31.93,
-            "shap_impact_delta": 0.08
+            "shap_impact_delta": 0.06
           },
           {
             "feature_key": "voltage_max",
@@ -372,15 +372,15 @@
             "shap_impact_delta": -0.05
           },
           {
-            "feature_key": "ambient_temperature_C",
-            "feature_name": "Ambient Temperature (\u00b0C)",
-            "feature_value": 24.0,
-            "shap_impact_delta": 0.0
-          },
-          {
             "feature_key": "temperature_max",
             "feature_name": "Peak Cell Temperature (\u00b0C)",
             "feature_value": 38.2,
+            "shap_impact_delta": 0.04
+          },
+          {
+            "feature_key": "ambient_temperature_C",
+            "feature_name": "Ambient Temperature (\u00b0C)",
+            "feature_value": 24.0,
             "shap_impact_delta": 0.0
           }
         ]
@@ -388,44 +388,44 @@
       "cycle_84": {
         "discharge_cycle_index": 84,
         "actual_soh_pct": 77.44,
-        "predicted_soh_pct": 77.53,
+        "predicted_soh_pct": 77.47,
         "baseline_mean_soh_pct": 78.63,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 3085.62,
-            "shap_impact_delta": -2.88
+            "shap_impact_delta": -2.85
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.81,
-            "shap_impact_delta": 1.08
+            "shap_impact_delta": 1.11
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 84.0,
-            "shap_impact_delta": -0.81
+            "shap_impact_delta": -0.94
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.51,
-            "shap_impact_delta": 0.52
+            "shap_impact_delta": 0.51
           },
           {
             "feature_key": "temperature_max",
             "feature_name": "Peak Cell Temperature (\u00b0C)",
             "feature_value": 40.12,
-            "shap_impact_delta": 0.22
+            "shap_impact_delta": 0.27
           },
           {
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.2,
-            "shap_impact_delta": 0.11
+            "shap_impact_delta": 0.09
           },
           {
             "feature_key": "current_min",
@@ -456,14 +456,14 @@
       "cycle_168": {
         "discharge_cycle_index": 168,
         "actual_soh_pct": 66.25,
-        "predicted_soh_pct": 66.43,
+        "predicted_soh_pct": 66.46,
         "baseline_mean_soh_pct": 78.63,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 2820.39,
-            "shap_impact_delta": -6.29
+            "shap_impact_delta": -6.28
           },
           {
             "feature_key": "discharge_cycle_index",
@@ -475,25 +475,25 @@
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.7,
-            "shap_impact_delta": -2.72
+            "shap_impact_delta": -2.69
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.48,
-            "shap_impact_delta": -0.57
+            "shap_impact_delta": -0.59
           },
           {
             "feature_key": "voltage_min",
             "feature_name": "End-of-Discharge Voltage (V)",
             "feature_value": 2.66,
-            "shap_impact_delta": -0.16
+            "shap_impact_delta": -0.15
           },
           {
             "feature_key": "current_min",
             "feature_name": "Peak Current Draw (A)",
             "feature_value": -2.02,
-            "shap_impact_delta": -0.11
+            "shap_impact_delta": -0.12
           },
           {
             "feature_key": "temperature_max",
@@ -511,7 +511,7 @@
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.2,
-            "shap_impact_delta": 0.02
+            "shap_impact_delta": 0.01
           },
           {
             "feature_key": "ambient_temperature_C",
@@ -530,42 +530,42 @@
       {
         "feature_key": "discharge_duration_s",
         "feature_name": "Discharge Duration (s)",
-        "importance_pct": 47.59
+        "importance_pct": 46.95
       },
       {
         "feature_key": "current_mean",
         "feature_name": "Mean Current Draw (A)",
-        "importance_pct": 23.32
+        "importance_pct": 23.39
       },
       {
         "feature_key": "discharge_cycle_index",
         "feature_name": "Discharge Cycle Index",
-        "importance_pct": 17.83
+        "importance_pct": 18.48
       },
       {
         "feature_key": "voltage_mean",
         "feature_name": "Mean Discharge Voltage (V)",
-        "importance_pct": 7.79
+        "importance_pct": 7.74
       },
       {
         "feature_key": "voltage_min",
         "feature_name": "End-of-Discharge Voltage (V)",
-        "importance_pct": 1.02
+        "importance_pct": 0.99
       },
       {
         "feature_key": "temperature_max",
         "feature_name": "Peak Cell Temperature (\u00b0C)",
-        "importance_pct": 0.7
+        "importance_pct": 0.81
       },
       {
         "feature_key": "current_min",
         "feature_name": "Peak Current Draw (A)",
-        "importance_pct": 0.7
+        "importance_pct": 0.69
       },
       {
         "feature_key": "temperature_mean",
         "feature_name": "Mean Cell Temperature (\u00b0C)",
-        "importance_pct": 0.58
+        "importance_pct": 0.5
       },
       {
         "feature_key": "voltage_max",
@@ -582,26 +582,26 @@
       "cycle_16": {
         "discharge_cycle_index": 16,
         "actual_soh_pct": 94.46,
-        "predicted_soh_pct": 94.74,
+        "predicted_soh_pct": 94.76,
         "baseline_mean_soh_pct": 77.34,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 3429.41,
-            "shap_impact_delta": 7.93
+            "shap_impact_delta": 7.81
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.99,
-            "shap_impact_delta": 3.35
+            "shap_impact_delta": 3.39
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 16.0,
-            "shap_impact_delta": 3.1
+            "shap_impact_delta": 3.25
           },
           {
             "feature_key": "voltage_mean",
@@ -613,13 +613,13 @@
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.18,
-            "shap_impact_delta": -0.08
+            "shap_impact_delta": -0.1
           },
           {
             "feature_key": "voltage_min",
             "feature_name": "End-of-Discharge Voltage (V)",
             "feature_value": 2.12,
-            "shap_impact_delta": 0.07
+            "shap_impact_delta": 0.05
           },
           {
             "feature_key": "temperature_mean",
@@ -631,13 +631,13 @@
             "feature_key": "temperature_max",
             "feature_name": "Peak Cell Temperature (\u00b0C)",
             "feature_value": 38.87,
-            "shap_impact_delta": 0.03
+            "shap_impact_delta": 0.04
           },
           {
             "feature_key": "current_min",
             "feature_name": "Peak Current Draw (A)",
             "feature_value": -2.01,
-            "shap_impact_delta": -0.01
+            "shap_impact_delta": 0.01
           },
           {
             "feature_key": "ambient_temperature_C",
@@ -650,38 +650,38 @@
       "cycle_84": {
         "discharge_cycle_index": 84,
         "actual_soh_pct": 73.38,
-        "predicted_soh_pct": 73.21,
+        "predicted_soh_pct": 73.27,
         "baseline_mean_soh_pct": 77.34,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 3085.62,
-            "shap_impact_delta": -3.43
-          },
-          {
-            "feature_key": "current_mean",
-            "feature_name": "Mean Current Draw (A)",
-            "feature_value": -1.73,
-            "shap_impact_delta": -1.0
+            "shap_impact_delta": -3.27
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 84.0,
-            "shap_impact_delta": -0.89
+            "shap_impact_delta": -1.12
+          },
+          {
+            "feature_key": "current_mean",
+            "feature_name": "Mean Current Draw (A)",
+            "feature_value": -1.73,
+            "shap_impact_delta": -0.91
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.43,
-            "shap_impact_delta": -0.8
+            "shap_impact_delta": -0.76
           },
           {
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.18,
-            "shap_impact_delta": -0.12
+            "shap_impact_delta": -0.11
           },
           {
             "feature_key": "voltage_min",
@@ -690,27 +690,27 @@
             "shap_impact_delta": 0.04
           },
           {
-            "feature_key": "temperature_max",
-            "feature_name": "Peak Cell Temperature (\u00b0C)",
-            "feature_value": 40.71,
-            "shap_impact_delta": 0.04
-          },
-          {
             "feature_key": "temperature_mean",
             "feature_name": "Mean Cell Temperature (\u00b0C)",
             "feature_value": 33.35,
-            "shap_impact_delta": -0.03
+            "shap_impact_delta": 0.01
           },
           {
-            "feature_key": "current_min",
-            "feature_name": "Peak Current Draw (A)",
-            "feature_value": -2.01,
-            "shap_impact_delta": -0.01
+            "feature_key": "temperature_max",
+            "feature_name": "Peak Cell Temperature (\u00b0C)",
+            "feature_value": 40.71,
+            "shap_impact_delta": 0.01
           },
           {
             "feature_key": "ambient_temperature_C",
             "feature_name": "Ambient Temperature (\u00b0C)",
             "feature_value": 24.0,
+            "shap_impact_delta": 0.0
+          },
+          {
+            "feature_key": "current_min",
+            "feature_name": "Peak Current Draw (A)",
+            "feature_value": -2.01,
             "shap_impact_delta": 0.0
           }
         ]
@@ -725,25 +725,25 @@
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.54,
-            "shap_impact_delta": -8.32
+            "shap_impact_delta": -8.36
           },
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 2820.39,
-            "shap_impact_delta": -7.4
+            "shap_impact_delta": -7.39
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 168.0,
-            "shap_impact_delta": -3.44
+            "shap_impact_delta": -3.46
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.42,
-            "shap_impact_delta": -0.86
+            "shap_impact_delta": -0.83
           },
           {
             "feature_key": "current_min",
@@ -758,12 +758,6 @@
             "shap_impact_delta": -0.03
           },
           {
-            "feature_key": "temperature_mean",
-            "feature_name": "Mean Cell Temperature (\u00b0C)",
-            "feature_value": 33.89,
-            "shap_impact_delta": -0.02
-          },
-          {
             "feature_key": "temperature_max",
             "feature_name": "Peak Cell Temperature (\u00b0C)",
             "feature_value": 41.36,
@@ -774,6 +768,12 @@
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.19,
             "shap_impact_delta": 0.01
+          },
+          {
+            "feature_key": "temperature_mean",
+            "feature_name": "Mean Cell Temperature (\u00b0C)",
+            "feature_value": 33.89,
+            "shap_impact_delta": -0.01
           },
           {
             "feature_key": "ambient_temperature_C",
@@ -792,42 +792,42 @@
       {
         "feature_key": "discharge_duration_s",
         "feature_name": "Discharge Duration (s)",
-        "importance_pct": 47.59
+        "importance_pct": 46.95
       },
       {
         "feature_key": "current_mean",
         "feature_name": "Mean Current Draw (A)",
-        "importance_pct": 23.32
+        "importance_pct": 23.39
       },
       {
         "feature_key": "discharge_cycle_index",
         "feature_name": "Discharge Cycle Index",
-        "importance_pct": 17.83
+        "importance_pct": 18.48
       },
       {
         "feature_key": "voltage_mean",
         "feature_name": "Mean Discharge Voltage (V)",
-        "importance_pct": 7.79
+        "importance_pct": 7.74
       },
       {
         "feature_key": "voltage_min",
         "feature_name": "End-of-Discharge Voltage (V)",
-        "importance_pct": 1.02
+        "importance_pct": 0.99
       },
       {
         "feature_key": "temperature_max",
         "feature_name": "Peak Cell Temperature (\u00b0C)",
-        "importance_pct": 0.7
+        "importance_pct": 0.81
       },
       {
         "feature_key": "current_min",
         "feature_name": "Peak Current Draw (A)",
-        "importance_pct": 0.7
+        "importance_pct": 0.69
       },
       {
         "feature_key": "temperature_mean",
         "feature_name": "Mean Cell Temperature (\u00b0C)",
-        "importance_pct": 0.58
+        "importance_pct": 0.5
       },
       {
         "feature_key": "voltage_max",
@@ -844,26 +844,26 @@
       "cycle_16": {
         "discharge_cycle_index": 16,
         "actual_soh_pct": 92.94,
-        "predicted_soh_pct": 92.78,
+        "predicted_soh_pct": 92.79,
         "baseline_mean_soh_pct": 82.22,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 3429.41,
-            "shap_impact_delta": 7.22
+            "shap_impact_delta": 7.13
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 16.0,
-            "shap_impact_delta": 2.98
+            "shap_impact_delta": 3.1
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.96,
-            "shap_impact_delta": 1.6
+            "shap_impact_delta": 1.63
           },
           {
             "feature_key": "voltage_mean",
@@ -875,13 +875,13 @@
             "feature_key": "voltage_min",
             "feature_name": "End-of-Discharge Voltage (V)",
             "feature_value": 2.01,
-            "shap_impact_delta": 0.26
+            "shap_impact_delta": 0.27
           },
           {
             "feature_key": "current_min",
             "feature_name": "Peak Current Draw (A)",
             "feature_value": -1.99,
-            "shap_impact_delta": 0.18
+            "shap_impact_delta": 0.15
           },
           {
             "feature_key": "voltage_max",
@@ -890,15 +890,15 @@
             "shap_impact_delta": 0.08
           },
           {
-            "feature_key": "temperature_mean",
-            "feature_name": "Mean Cell Temperature (\u00b0C)",
-            "feature_value": 31.88,
-            "shap_impact_delta": 0.07
-          },
-          {
             "feature_key": "temperature_max",
             "feature_name": "Peak Cell Temperature (\u00b0C)",
             "feature_value": 39.56,
+            "shap_impact_delta": 0.06
+          },
+          {
+            "feature_key": "temperature_mean",
+            "feature_name": "Mean Cell Temperature (\u00b0C)",
+            "feature_value": 31.88,
             "shap_impact_delta": 0.05
           },
           {
@@ -912,32 +912,32 @@
       "cycle_84": {
         "discharge_cycle_index": 84,
         "actual_soh_pct": 80.54,
-        "predicted_soh_pct": 80.71,
+        "predicted_soh_pct": 80.66,
         "baseline_mean_soh_pct": 82.22,
         "feature_contributions": [
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.9,
-            "shap_impact_delta": 3.98
+            "shap_impact_delta": 3.95
           },
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 3085.62,
-            "shap_impact_delta": -2.86
+            "shap_impact_delta": -2.83
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 84.0,
-            "shap_impact_delta": -0.83
+            "shap_impact_delta": -0.95
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.51,
-            "shap_impact_delta": 0.74
+            "shap_impact_delta": 0.8
           },
           {
             "feature_key": "voltage_min",
@@ -949,13 +949,13 @@
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.2,
-            "shap_impact_delta": 0.08
+            "shap_impact_delta": 0.09
           },
           {
             "feature_key": "current_min",
             "feature_name": "Peak Current Draw (A)",
             "feature_value": -1.99,
-            "shap_impact_delta": 0.08
+            "shap_impact_delta": 0.07
           },
           {
             "feature_key": "temperature_mean",
@@ -980,50 +980,44 @@
       "cycle_168": {
         "discharge_cycle_index": 168,
         "actual_soh_pct": 71.62,
-        "predicted_soh_pct": 71.52,
+        "predicted_soh_pct": 71.51,
         "baseline_mean_soh_pct": 82.22,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 2820.39,
-            "shap_impact_delta": -5.88
+            "shap_impact_delta": -5.82
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 168.0,
-            "shap_impact_delta": -2.79
+            "shap_impact_delta": -2.77
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -1.86,
-            "shap_impact_delta": 1.44
+            "shap_impact_delta": 1.52
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.48,
-            "shap_impact_delta": -1.03
+            "shap_impact_delta": -1.08
           },
           {
             "feature_key": "voltage_min",
             "feature_name": "End-of-Discharge Voltage (V)",
             "feature_value": 2.17,
-            "shap_impact_delta": 0.17
-          },
-          {
-            "feature_key": "current_min",
-            "feature_name": "Peak Current Draw (A)",
-            "feature_value": -2.01,
-            "shap_impact_delta": 0.12
+            "shap_impact_delta": 0.16
           },
           {
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.21,
-            "shap_impact_delta": 0.09
+            "shap_impact_delta": 0.08
           },
           {
             "feature_key": "temperature_max",
@@ -1032,16 +1026,22 @@
             "shap_impact_delta": 0.03
           },
           {
-            "feature_key": "temperature_mean",
-            "feature_name": "Mean Cell Temperature (\u00b0C)",
-            "feature_value": 32.93,
-            "shap_impact_delta": -0.02
-          },
-          {
             "feature_key": "ambient_temperature_C",
             "feature_name": "Ambient Temperature (\u00b0C)",
             "feature_value": 24.0,
             "shap_impact_delta": 0.0
+          },
+          {
+            "feature_key": "current_min",
+            "feature_name": "Peak Current Draw (A)",
+            "feature_value": -2.01,
+            "shap_impact_delta": 0.0
+          },
+          {
+            "feature_key": "temperature_mean",
+            "feature_name": "Mean Cell Temperature (\u00b0C)",
+            "feature_value": 32.93,
+            "shap_impact_delta": -0.0
           }
         ]
       }
@@ -1054,42 +1054,42 @@
       {
         "feature_key": "discharge_duration_s",
         "feature_name": "Discharge Duration (s)",
-        "importance_pct": 47.59
+        "importance_pct": 46.95
       },
       {
         "feature_key": "current_mean",
         "feature_name": "Mean Current Draw (A)",
-        "importance_pct": 23.32
+        "importance_pct": 23.39
       },
       {
         "feature_key": "discharge_cycle_index",
         "feature_name": "Discharge Cycle Index",
-        "importance_pct": 17.83
+        "importance_pct": 18.48
       },
       {
         "feature_key": "voltage_mean",
         "feature_name": "Mean Discharge Voltage (V)",
-        "importance_pct": 7.79
+        "importance_pct": 7.74
       },
       {
         "feature_key": "voltage_min",
         "feature_name": "End-of-Discharge Voltage (V)",
-        "importance_pct": 1.02
+        "importance_pct": 0.99
       },
       {
         "feature_key": "temperature_max",
         "feature_name": "Peak Cell Temperature (\u00b0C)",
-        "importance_pct": 0.7
+        "importance_pct": 0.81
       },
       {
         "feature_key": "current_min",
         "feature_name": "Peak Current Draw (A)",
-        "importance_pct": 0.7
+        "importance_pct": 0.69
       },
       {
         "feature_key": "temperature_mean",
         "feature_name": "Mean Cell Temperature (\u00b0C)",
-        "importance_pct": 0.58
+        "importance_pct": 0.5
       },
       {
         "feature_key": "voltage_max",
@@ -1106,62 +1106,62 @@
       "cycle_15": {
         "discharge_cycle_index": 15,
         "actual_soh_pct": 96.55,
-        "predicted_soh_pct": 83.09,
+        "predicted_soh_pct": 83.34,
         "baseline_mean_soh_pct": 87.52,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 1749.9,
-            "shap_impact_delta": -6.01
+            "shap_impact_delta": -6.07
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -2.13,
-            "shap_impact_delta": 5.1
+            "shap_impact_delta": 5.19
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 15.0,
-            "shap_impact_delta": 3.41
+            "shap_impact_delta": 3.59
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.65,
-            "shap_impact_delta": 1.5
+            "shap_impact_delta": 1.52
           },
           {
             "feature_key": "voltage_min",
             "feature_name": "End-of-Discharge Voltage (V)",
             "feature_value": 2.66,
-            "shap_impact_delta": -0.14
+            "shap_impact_delta": -0.12
           },
           {
             "feature_key": "current_min",
             "feature_name": "Peak Current Draw (A)",
             "feature_value": -2.25,
-            "shap_impact_delta": -0.1
-          },
-          {
-            "feature_key": "temperature_mean",
-            "feature_name": "Mean Cell Temperature (\u00b0C)",
-            "feature_value": 42.69,
-            "shap_impact_delta": -0.03
-          },
-          {
-            "feature_key": "temperature_max",
-            "feature_name": "Peak Cell Temperature (\u00b0C)",
-            "feature_value": 47.09,
-            "shap_impact_delta": -0.03
+            "shap_impact_delta": -0.09
           },
           {
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.18,
-            "shap_impact_delta": -0.01
+            "shap_impact_delta": -0.03
+          },
+          {
+            "feature_key": "temperature_mean",
+            "feature_name": "Mean Cell Temperature (\u00b0C)",
+            "feature_value": 42.69,
+            "shap_impact_delta": -0.02
+          },
+          {
+            "feature_key": "temperature_max",
+            "feature_name": "Peak Cell Temperature (\u00b0C)",
+            "feature_value": 47.09,
+            "shap_impact_delta": -0.02
           },
           {
             "feature_key": "ambient_temperature_C",
@@ -1174,50 +1174,44 @@
       "cycle_75": {
         "discharge_cycle_index": 75,
         "actual_soh_pct": 86.18,
-        "predicted_soh_pct": 79.59,
+        "predicted_soh_pct": 79.43,
         "baseline_mean_soh_pct": 87.52,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 1540.8,
-            "shap_impact_delta": -5.89
+            "shap_impact_delta": -5.92
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -2.16,
-            "shap_impact_delta": 5.09
+            "shap_impact_delta": 5.16
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.58,
-            "shap_impact_delta": 1.67
+            "shap_impact_delta": 1.68
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 75.0,
-            "shap_impact_delta": -0.45
-          },
-          {
-            "feature_key": "current_min",
-            "feature_name": "Peak Current Draw (A)",
-            "feature_value": -2.26,
-            "shap_impact_delta": -0.08
+            "shap_impact_delta": -0.71
           },
           {
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.13,
-            "shap_impact_delta": -0.05
+            "shap_impact_delta": -0.06
           },
           {
-            "feature_key": "temperature_mean",
-            "feature_name": "Mean Cell Temperature (\u00b0C)",
-            "feature_value": 44.49,
-            "shap_impact_delta": -0.04
+            "feature_key": "current_min",
+            "feature_name": "Peak Current Draw (A)",
+            "feature_value": -2.26,
+            "shap_impact_delta": -0.06
           },
           {
             "feature_key": "voltage_min",
@@ -1229,12 +1223,18 @@
             "feature_key": "temperature_max",
             "feature_name": "Peak Cell Temperature (\u00b0C)",
             "feature_value": 49.04,
-            "shap_impact_delta": -0.03
+            "shap_impact_delta": -0.02
           },
           {
             "feature_key": "ambient_temperature_C",
             "feature_name": "Ambient Temperature (\u00b0C)",
             "feature_value": 39.91,
+            "shap_impact_delta": 0.0
+          },
+          {
+            "feature_key": "temperature_mean",
+            "feature_name": "Mean Cell Temperature (\u00b0C)",
+            "feature_value": 44.49,
             "shap_impact_delta": 0.0
           }
         ]
@@ -1242,50 +1242,50 @@
       "cycle_150": {
         "discharge_cycle_index": 150,
         "actual_soh_pct": 76.47,
-        "predicted_soh_pct": 74.11,
+        "predicted_soh_pct": 74.05,
         "baseline_mean_soh_pct": 87.52,
         "feature_contributions": [
           {
             "feature_key": "discharge_duration_s",
             "feature_name": "Discharge Duration (s)",
             "feature_value": 1382.4,
-            "shap_impact_delta": -6.44
+            "shap_impact_delta": -6.49
           },
           {
             "feature_key": "current_mean",
             "feature_name": "Mean Current Draw (A)",
             "feature_value": -2.17,
-            "shap_impact_delta": 5.06
+            "shap_impact_delta": 5.03
           },
           {
             "feature_key": "discharge_cycle_index",
             "feature_name": "Discharge Cycle Index",
             "feature_value": 150.0,
-            "shap_impact_delta": -2.63
+            "shap_impact_delta": -2.66
           },
           {
             "feature_key": "voltage_mean",
             "feature_name": "Mean Discharge Voltage (V)",
             "feature_value": 3.46,
-            "shap_impact_delta": -1.07
+            "shap_impact_delta": -1.06
           },
           {
             "feature_key": "current_min",
             "feature_name": "Peak Current Draw (A)",
             "feature_value": -2.22,
-            "shap_impact_delta": -0.09
+            "shap_impact_delta": -0.07
           },
           {
             "feature_key": "voltage_max",
             "feature_name": "Initial Open-Circuit Voltage (V)",
             "feature_value": 4.1,
-            "shap_impact_delta": -0.06
+            "shap_impact_delta": -0.04
           },
           {
             "feature_key": "voltage_min",
             "feature_name": "End-of-Discharge Voltage (V)",
             "feature_value": 2.46,
-            "shap_impact_delta": -0.04
+            "shap_impact_delta": -0.03
           },
           {
             "feature_key": "temperature_max",
@@ -1294,16 +1294,16 @@
             "shap_impact_delta": -0.02
           },
           {
+            "feature_key": "temperature_mean",
+            "feature_name": "Mean Cell Temperature (\u00b0C)",
+            "feature_value": 45.91,
+            "shap_impact_delta": 0.01
+          },
+          {
             "feature_key": "ambient_temperature_C",
             "feature_name": "Ambient Temperature (\u00b0C)",
             "feature_value": 40.13,
             "shap_impact_delta": 0.0
-          },
-          {
-            "feature_key": "temperature_mean",
-            "feature_name": "Mean Cell Temperature (\u00b0C)",
-            "feature_value": 45.91,
-            "shap_impact_delta": -0.0
           }
         ]
       }

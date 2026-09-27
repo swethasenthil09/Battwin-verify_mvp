@@ -49,6 +49,12 @@ if os.path.exists(masking_path):
     with open(masking_path) as f:
         masking_data = json.load(f)
 
+late_life_data = {}
+late_life_path = os.path.join(DATA_DIR, "late_life_analysis.json")
+if os.path.exists(late_life_path):
+    with open(late_life_path) as f:
+        late_life_data = json.load(f)
+
 payload = {
     "batteries": [],
     "analyses": {},
@@ -59,6 +65,7 @@ payload = {
     "shap_explainability": shap_data,
     "ecm_physics": ecm_data,
     "data_masking_experiment": masking_data,
+    "late_life_analysis": late_life_data,
     "recommendations": {}
 }
 
